@@ -7,7 +7,7 @@
 import React, { Component } from 'react';
 
 import { 
-	Content
+  Content
 } from 'native-base';
 
 export default class GlobalContainer extends React.Component {
