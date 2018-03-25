@@ -6,9 +6,9 @@
 
 import React, { Component } from 'react';
 
-import { 
-	Container,
-	Content
+import {
+	Drawer,
+	Container
 } from 'native-base';
 
 // react-native-router-fluxのインポート宣言(Actionを使用)
@@ -17,6 +17,7 @@ import { Actions } from 'react-native-router-flux';
 // グローバルコンテンツ用の共通コンポーネント
 import GlobalHeader from '../common/GlobalHeader';
 import GlobalFooter from '../common/GlobalFooter';
+import GlobalContainer from '../common/GlobalContainer';
 import GlobalTab from '../common/GlobalTab';
 
 // スクリーン表示用のコンポーネント
@@ -46,11 +47,6 @@ export default class GlobalTabContents extends React.Component {
 		this.state = { isDrawerOpen: false, isDrawerDisabled: false, selectedIndex: 0 };
   };
 
-	// タブのボタンを押下した際のイベント処理
-  _onPressGlobalTab = (index) => {
-		this.setState({ selectedIndex: index });
-  };
-
 	// タイトルを表示する
   _showTitle = (index) => {
 		return screenItems[index].title;
@@ -64,8 +60,8 @@ export default class GlobalTabContents extends React.Component {
     }
 	};
 
-	// タブのボタンを押下した際のイベント処理
-  _renderGlobalTabs = () => {
+	// タブのボタンを表示する
+  _showGlobalTabs = () => {
 		return screenItems.map( (tabBarItem, index) => {
 			if (index <= TAB_CONTENT_INDEX_LIMIT) {
 				return (
@@ -78,16 +74,43 @@ export default class GlobalTabContents extends React.Component {
 				);
 			}
 		});
-  };
+	};
+	
+	// タブのボタンを押下した際の処理
+	_onPressGlobalTab = (index) => {
+		this.setState({ selectedIndex: index });
+	};
+
+	// ヘッダーのメニューボタンを押下した際の処理
+	_onPressMenuButton = () => {
+		console.log("ヘッダーのメニューボタンを押下した際の処理");
+	};
+
+	// ヘッダーの設定ボタンを押下した際の処理
+	_onPressSettingButton = () => {
+		console.log("ヘッダーの設定ボタンを押下した際の処理");
+	};
+
+	// ドロワーメニューを閉じる際の処理
+	_closeDrawer = (index) => {
+		this.setState({ selectedIndex: index });
+		this._drawer._root.close();
+	};
+
+	// ドロワーメニューを開く際の処理
+	_openDrawer = () => {
+		this._drawer._root.open();
+	};
 
 	render() {
     return (
       <Container>
-        <GlobalHeader title={this._showTitle(this.state.selectedIndex)} />
-				<Content>
-					{this._showContents(this.state.selectedIndex)}
-				</Content>
-        <GlobalFooter tabs={this._renderGlobalTabs()} />
+				<GlobalHeader 
+					title={this._showTitle(this.state.selectedIndex)}
+					onPressMenuButton={this._onPressMenuButton()}
+					onPressSettingButton={this._onPressSettingButton()} />
+				<GlobalContainer screen={this._showContents(this.state.selectedIndex)} />
+        <GlobalFooter tabs={this._showGlobalTabs()} />
       </Container>
     );
   };

@@ -6,12 +6,16 @@
 
 import React, { Component } from 'react';
 
-import FeedCard from './parts/FeedCard';
+import { 
+	Content
+} from 'native-base';
 
-export default class FeedScreen extends React.Component {
+export default class GlobalContainer extends React.Component {
   render() {
     return (
-      <FeedCard />
+      <Content>
+        {this.props.screen}
+      </Content>
     );
   };
 }
