@@ -6,16 +6,9 @@
 
 import React, { Component } from 'react';
 
-import {
-  Platform,
-  StyleSheet,
-  Text,
-  View
-} from 'react-native';
-
 import { 
-  Container,
-  Content
+	Container,
+	Content
 } from 'native-base';
 
 // react-native-router-fluxのインポート宣言(Actionを使用)
@@ -26,13 +19,22 @@ import GlobalHeader from '../common/GlobalHeader';
 import GlobalFooter from '../common/GlobalFooter';
 import GlobalTab from '../common/GlobalTab';
 
+// スクリーン表示用のコンポーネント
+import FeedScreen from './screen/feed/FeedScreen';
+
 // タブ表示用の要素
-let tabBarItems = [
+let screenItems = [
+	// タブと連動した部分
   { screen: "feed", title: "フィード", icon: "list" },
   { screen: "diary", title: "勉強日記", icon: "clipboard" },
   { screen: "record", title: "達成記録", icon: "medal" },
-  { screen: "shopping", title: "お買い物", icon: "book" },
+	{ screen: "shopping", title: "お買い物", icon: "book" },
+	// ドロワーと連動した部分
+	{ screen: "contact", title: "お問い合わせ", icon: "email" },
 ];
+
+// タブまでのインデックス番号
+let TAB_CONTENT_INDEX_LIMIT = 3;
 
 export default class GlobalTabContents extends React.Component {
 
@@ -51,23 +53,30 @@ export default class GlobalTabContents extends React.Component {
 
 	// タイトルを表示する
   _showTitle = (index) => {
-		return tabBarItems[index].title;
+		return screenItems[index].title;
 	};
 
 	// コンテンツを表示する
-  _showContents = (index) => {};
+  _showContents = (index) => {
+    switch (index) {
+			default:
+        return <FeedScreen />
+    }
+	};
 
 	// タブのボタンを押下した際のイベント処理
   _renderGlobalTabs = () => {
-		return tabBarItems.map( (tabBarItem, index) => {
-			return (
-				<GlobalTab 
-					key={index}
-					selected={this.state.selectedIndex === index}
-					title={tabBarItem.title}
-					icon={tabBarItem.icon}
-					onPress={ () => this._onPressGlobalTab(index) } />
-			);
+		return screenItems.map( (tabBarItem, index) => {
+			if (index <= TAB_CONTENT_INDEX_LIMIT) {
+				return (
+					<GlobalTab 
+						key={index}
+						selected={this.state.selectedIndex === index}
+						title={tabBarItem.title}
+						icon={tabBarItem.icon}
+						onPress={ () => this._onPressGlobalTab(index) } />
+				);
+			}
 		});
   }
 
@@ -75,17 +84,11 @@ export default class GlobalTabContents extends React.Component {
     return (
       <Container>
         <GlobalHeader title={this._showTitle(this.state.selectedIndex)} />
-        <Content>
-					{/* ここからコンテンツ表示用のComponentを入れる */}
-					<View>
-						<Text>{this.state.selectedIndex}</Text>
-					</View>
-					{/* ここまでコンテンツ表示用のComponentを入れる */}
+				<Content>
+					{this._showContents(this.state.selectedIndex)}
 				</Content>
         <GlobalFooter tabs={this._renderGlobalTabs()} />
       </Container>
     );
   }
 }
-
-const styles = StyleSheet.create({});
