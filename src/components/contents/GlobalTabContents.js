@@ -56,7 +56,7 @@ export default class GlobalTabContents extends React.Component {
   _showContents = (index) => {
     switch (index) {
       default:
-        return <FeedScreen />
+        return (<FeedScreen />);
     }
   };
 
