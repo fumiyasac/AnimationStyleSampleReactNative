@@ -13,5 +13,5 @@ export default class FeedScreen extends React.Component {
     return (
       <FeedCard />
     );
-  }
+  };
 }

@@ -20,5 +20,5 @@ export default class GlobalFooter extends React.Component {
         </FooterTab>
       </Footer>
     );
-  }
+  };
 }

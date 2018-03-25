@@ -25,7 +25,7 @@ export default class FeedCars extends React.Component {
         </Card>
       </View>
     );
-  }
+  };
 }
 
 const styles = StyleSheet.create({});

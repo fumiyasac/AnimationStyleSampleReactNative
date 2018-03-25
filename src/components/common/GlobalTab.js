@@ -24,7 +24,7 @@ export default class GlobalTab extends React.Component {
         <Text style={this.props.selected ? styles.tabSelectedColor : styles.tabDefaultColor}>{this.props.title}</Text>
       </Button>
     );
-  }
+  };
 }
 
 const styles = StyleSheet.create({

@@ -78,7 +78,7 @@ export default class GlobalTabContents extends React.Component {
 				);
 			}
 		});
-  }
+  };
 
 	render() {
     return (
@@ -90,5 +90,5 @@ export default class GlobalTabContents extends React.Component {
         <GlobalFooter tabs={this._renderGlobalTabs()} />
       </Container>
     );
-  }
+  };
 }

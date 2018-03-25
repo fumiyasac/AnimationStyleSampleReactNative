@@ -25,7 +25,7 @@ export default class GlobalHeader extends React.Component {
         </Body>
       </Header>
     );
-  }
+  };
 }
 
 const styles = StyleSheet.create({
