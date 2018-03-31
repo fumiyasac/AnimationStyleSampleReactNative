@@ -19,6 +19,7 @@ import GlobalHeader from '../common/GlobalHeader';
 import GlobalFooter from '../common/GlobalFooter';
 import GlobalContainer from '../common/GlobalContainer';
 import GlobalTab from '../common/GlobalTab';
+import GlobalSideMenu from '../common/GlobalSideMenu';
 
 // スクリーン表示用のコンポーネント
 import FeedScreen from './screen/feed/FeedScreen';
@@ -83,7 +84,9 @@ export default class GlobalTabContents extends React.Component {
 
   // ヘッダーのメニューボタンを押下した際の処理
   _onPressMenuButton = () => {
-    console.log("ヘッダーのメニューボタンを押下した際の処理");
+    // ドロワーメニューを開く
+    this._drawer._root.open();
+    console.log(this.state);
   };
 
   // ヘッダーの設定ボタンを押下した際の処理
@@ -92,26 +95,56 @@ export default class GlobalTabContents extends React.Component {
   };
 
   // ドロワーメニューを閉じる際の処理
-  _closeDrawer = (index) => {
+  _onPressDrawerContents = (index) => {
     this.setState({ selectedIndex: index });
+    // ドロワーメニューを閉じる
     this._drawer._root.close();
+    console.log(this.state);
   };
 
-  // ドロワーメニューを開く際の処理
-  _openDrawer = () => {
-    this._drawer._root.open();
+  // ドロワーメニューを閉じる際の処理
+  _updateDrawerOpenState = (result) => {
+    this.setState({ isDrawerOpen: result });
+    console.log(this.state);
   };
 
   render() {
+    const { selectedIndex, isDrawerDisabled } = this.state;
+    /**
+     * Memo:
+     * NativeBaseのDrawerは下記のライブラリを拡張して作られている
+     * (各種プロパティの参考) React Native Drawer
+     * https://github.com/root-two/react-native-drawer#props
+    */
     return (
-      <Container>
-        <GlobalHeader 
-          title={this._showTitle(this.state.selectedIndex)}
-          onPressMenuButton={this._onPressMenuButton()}
-          onPressSettingButton={this._onPressSettingButton()} />
-        <GlobalContainer screen={this._showContents(this.state.selectedIndex)} />
-        <GlobalFooter tabs={this._showGlobalTabs()} />
-      </Container>
+      <Drawer
+        ref={ (ref) => { this._drawer = ref; } }
+        type={"static"}
+        content={ <GlobalSideMenu /> }
+        onOpen={ () => this._updateDrawerOpenState(true) }
+        onClose={ () => this._updateDrawerOpenState(false) }
+        tweenHandler={ (ratio) => {
+          return { mainOverlay: { opacity: ratio / 2, backgroundColor: 'black' }};
+        } }
+        captureGestures={true}
+        tweenDuration={160}
+        disabled={isDrawerDisabled}
+        openDrawerOffset={ (viewport) => { return 80; } }
+        side={"left"}
+        closedDrawerOffset={ () => { return 0; } }
+        panOpenMask={0.04}
+        negotiatePan={true}
+        >
+        {/* 画面に表示している内容 */}
+        <Container>
+          <GlobalHeader 
+            title={this._showTitle(selectedIndex)}
+            onPressMenuButton={ () => this._onPressMenuButton() }
+            onPressSettingButton={ () => this._onPressSettingButton() } />
+          <GlobalContainer screen={this._showContents(selectedIndex)} />
+          <GlobalFooter tabs={this._showGlobalTabs()} />
+        </Container>
+      </Drawer>
     );
   };
 }
