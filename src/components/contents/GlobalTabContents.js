@@ -86,25 +86,27 @@ export default class GlobalTabContents extends React.Component {
   _onPressMenuButton = () => {
     // ドロワーメニューを開く
     this._drawer._root.open();
-    console.log(this.state);
   };
 
   // ヘッダーの設定ボタンを押下した際の処理
   _onPressSettingButton = () => {
+    // Debug.
     console.log("ヘッダーの設定ボタンを押下した際の処理");
   };
 
-  // ドロワーメニューを閉じる際の処理
-  _onPressDrawerContents = (index) => {
+  // ドロワーメニュー経由でコンテンツを更新する際の処理
+  _updateContentsFromDrawer = (index) => {
     this.setState({ selectedIndex: index });
+    // Debug.
+    console.log(this.state);
     // ドロワーメニューを閉じる
     this._drawer._root.close();
-    console.log(this.state);
   };
 
-  // ドロワーメニューを閉じる際の処理
+  // ドロワーの開閉状態を変更する際の処理
   _updateDrawerOpenState = (result) => {
     this.setState({ isDrawerOpen: result });
+    // Debug.
     console.log(this.state);
   };
 
@@ -120,7 +122,10 @@ export default class GlobalTabContents extends React.Component {
       <Drawer
         ref={ (ref) => { this._drawer = ref; } }
         type={"static"}
-        content={ <GlobalSideMenu /> }
+        content={ 
+          /* GlobalSideMenuコンポーネントで_updateContentsFromDrawerを実行できるようにする */
+          <GlobalSideMenu updateContentsFromDrawer={this._updateContentsFromDrawer} />
+        }
         onOpen={ () => this._updateDrawerOpenState(true) }
         onClose={ () => this._updateDrawerOpenState(false) }
         tweenHandler={ (ratio) => {
