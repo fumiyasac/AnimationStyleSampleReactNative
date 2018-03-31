@@ -18,10 +18,11 @@ import {
 
 export default class GlobalTab extends React.Component {
   render() {
+    const { selected, icon, title } = this.props;
     return (
       <Button vertical onPress={this.props.onPress}>
-        <Icon style={this.props.selected ? styles.tabSelectedColor : styles.tabDefaultColor} name={this.props.icon} />
-        <Text style={this.props.selected ? styles.tabSelectedColor : styles.tabDefaultColor}>{this.props.title}</Text>
+        <Icon style={selected ? styles.tabSelectedColor : styles.tabDefaultColor} name={icon} />
+        <Text style={selected ? styles.tabSelectedColor : styles.tabDefaultColor}>{title}</Text>
       </Button>
     );
   };

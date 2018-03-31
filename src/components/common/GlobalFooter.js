@@ -13,10 +13,11 @@ import {
 
 export default class GlobalFooter extends React.Component {
   render() {
+    const { tabs } = this.props;
     return (
       <Footer>
         <FooterTab>
-          {this.props.tabs}
+          {tabs}
         </FooterTab>
       </Footer>
     );

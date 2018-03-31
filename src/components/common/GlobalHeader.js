@@ -22,18 +22,19 @@ import {
 
 export default class GlobalHeader extends React.Component {
   render() {
+    const { title, onPressMenuButton, onPressSettingButton } = this.props;
     return (
       <Header iosBarStyle="light-content" style={styles.headerBackgroundColor} hasTabs>
         <Left>
-          <Button transparent onPress={this.props.onPressMenuButton}>
+          <Button transparent onPress={onPressMenuButton}>
             <Icon style={styles.buttonColor} name="menu" />
           </Button>
         </Left>
         <Body>
-          <Title style={styles.titleColor}>{this.props.title}</Title>
+          <Title style={styles.titleColor}>{title}</Title>
         </Body>
         <Right>
-          <Button transparent onPress={this.props.onPressSettingButton}>
+          <Button transparent onPress={onPressSettingButton}>
             <Icon style={styles.buttonColor} name="settings" />
           </Button>
         </Right>

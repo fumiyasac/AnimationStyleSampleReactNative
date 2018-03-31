@@ -12,9 +12,10 @@ import {
 
 export default class GlobalContainer extends React.Component {
   render() {
+    const { screen } = this.props;
     return (
       <Content>
-        {this.props.screen}
+        {screen}
       </Content>
     );
   };
