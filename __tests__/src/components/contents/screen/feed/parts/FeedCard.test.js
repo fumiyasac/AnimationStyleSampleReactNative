@@ -26,7 +26,6 @@ it('FeedCardコンポーネントが正しく表示されること', () => {
   const onPressCommentButtonMock = jest.fn();
   const onPressReadModeButton = jest.fn();
 
-  // スナップショットの書き出し
   const tree = renderer.create(
     <FeedCard feed={stubObject.feed.contents[0]}
       onPressLikeButton ={onPressLikeButtonMock()}

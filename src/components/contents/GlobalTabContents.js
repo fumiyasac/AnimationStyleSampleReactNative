@@ -7,6 +7,10 @@
 import React, { Component } from 'react';
 
 import {
+  StyleSheet
+} from 'react-native';
+
+import {
   Drawer,
   Container
 } from 'native-base';
@@ -19,7 +23,9 @@ import GlobalHeader from '../common/GlobalHeader';
 import GlobalFooter from '../common/GlobalFooter';
 import GlobalContainer from '../common/GlobalContainer';
 import GlobalTab from '../common/GlobalTab';
-import GlobalSideMenu from '../common/GlobalSideMenu';
+
+// サイドメニュー用のコンポーネント
+import GlobalSideMenu from './GlobalSideMenu';
 
 // スクリーン表示用のコンポーネント
 import FeedScreen from './screen/feed/FeedScreen';
@@ -121,7 +127,7 @@ export default class GlobalTabContents extends React.Component {
     return (
       <Drawer
         ref={ (ref) => { this._drawer = ref; } }
-        type={"static"}
+        type={"overlay"}
         content={ 
           /* GlobalSideMenuコンポーネントで_updateContentsFromDrawerを実行できるようにする */
           <GlobalSideMenu updateContentsFromDrawer={this._updateContentsFromDrawer} />
@@ -141,7 +147,7 @@ export default class GlobalTabContents extends React.Component {
         negotiatePan={true}
         >
         {/* 画面に表示している内容 */}
-        <Container>
+        <Container style={styles.container}>
           <GlobalHeader 
             title={this._showTitle(selectedIndex)}
             onPressMenuButton={ () => this._onPressMenuButton() }
@@ -153,3 +159,10 @@ export default class GlobalTabContents extends React.Component {
     );
   };
 }
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#eeeeee'
+  }
+});

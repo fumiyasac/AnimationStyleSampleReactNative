@@ -45,12 +45,12 @@ export default class GlobalHeader extends React.Component {
 
 const styles = StyleSheet.create({
   headerBackgroundColor: {
-    backgroundColor: '#4169e1',
+    backgroundColor: '#4169e1'
   },
   titleColor: {
-    color: '#ffffff',
+    color: '#ffffff'
   },
   buttonColor: {
-    color: '#ffffff',
+    color: '#ffffff'
   }
 });

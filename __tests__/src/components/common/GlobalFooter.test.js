@@ -7,7 +7,6 @@ import renderer from 'react-test-renderer';
 
 it('GlobalFooterコンポーネントが正しく表示されること', () => {
 
-  // 表示対象のオブジェクト
   let stubObjectArray = [
     { screen: "feed", title: "フィード", icon: "list" },
     { screen: "diary", title: "勉強日記", icon: "clipboard" },
@@ -15,10 +14,8 @@ it('GlobalFooterコンポーネントが正しく表示されること', () => {
     { screen: "shopping", title: "お買い物", icon: "book" }
   ];
 
-  // onPressのモック
   const onPressMock = jest.fn();
 
-  // タブのボタンを表示する
   const makeTabs = () => { 
     return stubObjectArray.map( (tabBarItem, index) => {
       return (
@@ -32,7 +29,6 @@ it('GlobalFooterコンポーネントが正しく表示されること', () => {
     });
   };
 
-  // スナップショットの書き出し
   const tree = renderer.create(
     <GlobalFooter
       tabs={makeTabs()} />
