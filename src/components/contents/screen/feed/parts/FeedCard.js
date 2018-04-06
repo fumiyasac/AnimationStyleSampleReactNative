@@ -122,7 +122,7 @@ const styles = StyleSheet.create({
     lineHeight: 20
   },
   cardFooter: {
-    marginTop: -16
+    marginTop: -8
   },
   centerBase: {
     flexDirection: 'row'

@@ -262,7 +262,7 @@ exports[`FeedCardコンポーネントが正しく表示されること 1`] = `
               "paddingTop": 10,
             },
             Object {
-              "marginTop": -16,
+              "marginTop": -8,
             },
           ]
         }
