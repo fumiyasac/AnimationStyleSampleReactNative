@@ -7,6 +7,7 @@
 import React, { Component } from 'react';
 
 import {
+  Platform,
   StyleSheet
 } from 'react-native';
 
@@ -19,20 +20,30 @@ import {
 export default class GlobalTab extends React.Component {
   render() {
     const { selected, icon, title } = this.props;
+    let deviceStyle = (Platform.OS === "ios") ? iosStyles : androidStyles;
     return (
       <Button vertical onPress={this.props.onPress}>
-        <Icon style={selected ? styles.tabSelectedColor : styles.tabDefaultColor} name={icon} />
-        <Text style={selected ? styles.tabSelectedColor : styles.tabDefaultColor}>{title}</Text>
+        <Icon style={selected ? deviceStyle.tabSelectedColor : deviceStyle.tabDefaultColor} name={icon} />
+        <Text style={selected ? deviceStyle.tabSelectedColor : deviceStyle.tabDefaultColor}>{title}</Text>
       </Button>
     );
   };
 }
 
-const styles = StyleSheet.create({
+const iosStyles = StyleSheet.create({
   tabDefaultColor: {
     color: '#999999',
   },
   tabSelectedColor: {
     color: '#4169e1'
+  }
+});
+
+const androidStyles = StyleSheet.create({
+  tabDefaultColor: {
+    color: '#c6c6c6',
+  },
+  tabSelectedColor: {
+    color: '#ffffff'
   }
 });
