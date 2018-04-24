@@ -38,7 +38,12 @@ let screenItems = [
   { screen: "record", title: "達成記録", icon: "medal" },
   { screen: "shopping", title: "お買い物", icon: "book" },
   // ドロワーと連動した部分
-  { screen: "contact", title: "お問い合わせ", icon: "email" },
+  { screen: "information", title: "新着のお知らせ" },
+  { screen: "contact", title: "お問い合わせ" },
+  { screen: "question", title: "よくある質問" },
+  { screen: "mind", title: "アプリの想い" },
+  // グローバルメニューと連動した部分
+  { screen: "setting", title: "設定" }
 ];
 
 // タブまでのインデックス番号
