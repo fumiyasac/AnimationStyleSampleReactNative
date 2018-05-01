@@ -1,0 +1,250 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SettingListコンポーネントが正しく表示されること 1`] = `
+<RCTScrollView
+  closeOnRowBeginSwipe={false}
+  closeOnRowPress={true}
+  closeOnScroll={true}
+  dataArray={
+    Array [
+      Object {
+        "onPressListItem": undefined,
+        "title": "設定コンテンツその1",
+      },
+      Object {
+        "onPressListItem": undefined,
+        "title": "設定コンテンツその2",
+      },
+      Object {
+        "onPressListItem": undefined,
+        "title": "設定コンテンツその3",
+      },
+    ]
+  }
+  dataSource={
+    ListViewDataSource {
+      "items": 3,
+    }
+  }
+  directionalDistanceChangeThreshold={2}
+  disableLeftSwipe={false}
+  disableRightSwipe={false}
+  enableEmptySections={true}
+  leftOpenValue={0}
+  previewFirstRow={false}
+  recalculateHiddenLayout={false}
+  renderRow={[Function]}
+  renderScrollComponent={[Function]}
+  rightOpenValue={0}
+  style={Object {}}
+  swipeToOpenPercent={50}
+  virtual={undefined}
+>
+  <View>
+    <View
+      accessibilityComponentType={undefined}
+      accessibilityLabel={undefined}
+      accessibilityTraits={undefined}
+      accessible={true}
+      hasTVPreferredFocus={undefined}
+      hitSlop={undefined}
+      isTVSelectable={true}
+      nativeID={undefined}
+      onLayout={undefined}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={null}
+      testID={undefined}
+      tvParallaxProperties={undefined}
+    >
+      <View
+        onPress={undefined}
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "backgroundColor": "transparent",
+              "borderBottomWidth": 0.5,
+              "borderColor": "#c9c9c9",
+              "flexDirection": "row",
+              "marginLeft": 15,
+              "paddingBottom": 13,
+              "paddingRight": 15,
+              "paddingTop": 13,
+            },
+            Object {
+              "height": 50,
+            },
+          ]
+        }
+        virtual={undefined}
+      >
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          ellipsizeMode="tail"
+          style={
+            Array [
+              Object {
+                "alignSelf": "center",
+                "color": "#000",
+                "fontFamily": "System",
+                "fontSize": 16,
+              },
+              Object {
+                "color": "#555555",
+                "fontSize": 12,
+                "fontWeight": "normal",
+              },
+            ]
+          }
+          uppercase={false}
+          virtual={undefined}
+        >
+          設定コンテンツその1
+        </Text>
+      </View>
+    </View>
+    <View
+      accessibilityComponentType={undefined}
+      accessibilityLabel={undefined}
+      accessibilityTraits={undefined}
+      accessible={true}
+      hasTVPreferredFocus={undefined}
+      hitSlop={undefined}
+      isTVSelectable={true}
+      nativeID={undefined}
+      onLayout={undefined}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={null}
+      testID={undefined}
+      tvParallaxProperties={undefined}
+    >
+      <View
+        onPress={undefined}
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "backgroundColor": "transparent",
+              "borderBottomWidth": 0.5,
+              "borderColor": "#c9c9c9",
+              "flexDirection": "row",
+              "marginLeft": 15,
+              "paddingBottom": 13,
+              "paddingRight": 15,
+              "paddingTop": 13,
+            },
+            Object {
+              "height": 50,
+            },
+          ]
+        }
+        virtual={undefined}
+      >
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          ellipsizeMode="tail"
+          style={
+            Array [
+              Object {
+                "alignSelf": "center",
+                "color": "#000",
+                "fontFamily": "System",
+                "fontSize": 16,
+              },
+              Object {
+                "color": "#555555",
+                "fontSize": 12,
+                "fontWeight": "normal",
+              },
+            ]
+          }
+          uppercase={false}
+          virtual={undefined}
+        >
+          設定コンテンツその2
+        </Text>
+      </View>
+    </View>
+    <View
+      accessibilityComponentType={undefined}
+      accessibilityLabel={undefined}
+      accessibilityTraits={undefined}
+      accessible={true}
+      hasTVPreferredFocus={undefined}
+      hitSlop={undefined}
+      isTVSelectable={true}
+      nativeID={undefined}
+      onLayout={undefined}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={null}
+      testID={undefined}
+      tvParallaxProperties={undefined}
+    >
+      <View
+        onPress={undefined}
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "backgroundColor": "transparent",
+              "borderBottomWidth": 0.5,
+              "borderColor": "#c9c9c9",
+              "flexDirection": "row",
+              "marginLeft": 15,
+              "paddingBottom": 13,
+              "paddingRight": 15,
+              "paddingTop": 13,
+            },
+            Object {
+              "height": 50,
+            },
+          ]
+        }
+        virtual={undefined}
+      >
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          ellipsizeMode="tail"
+          style={
+            Array [
+              Object {
+                "alignSelf": "center",
+                "color": "#000",
+                "fontFamily": "System",
+                "fontSize": 16,
+              },
+              Object {
+                "color": "#555555",
+                "fontSize": 12,
+                "fontWeight": "normal",
+              },
+            ]
+          }
+          uppercase={false}
+          virtual={undefined}
+        >
+          設定コンテンツその3
+        </Text>
+      </View>
+    </View>
+  </View>
+</RCTScrollView>
+`;

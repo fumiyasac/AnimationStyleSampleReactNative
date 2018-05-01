@@ -11,6 +11,7 @@ import { Router, Scene } from 'react-native-router-flux';
 
 // 自作コンポーネント
 import GlobalTabContents from './components/contents/GlobalTabContents';
+import SettingContents from './components/contents/SettingContents';
 
 export default class App extends React.Component {
   render() {
@@ -18,6 +19,7 @@ export default class App extends React.Component {
       <Router>
         <Scene key="root">
           <Scene key="GlobalTabContents" initial={true} component={GlobalTabContents} hideNavBar={true} />
+          <Scene key="SettingContents" component={SettingContents} hideNavBar={true} />
         </Scene>
       </Router>
     );

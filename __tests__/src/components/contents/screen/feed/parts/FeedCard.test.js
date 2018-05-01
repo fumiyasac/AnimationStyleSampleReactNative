@@ -24,13 +24,13 @@ it('FeedCardコンポーネントが正しく表示されること', () => {
 
   const onPressLikeButtonMock = jest.fn();
   const onPressCommentButtonMock = jest.fn();
-  const onPressReadModeButton = jest.fn();
+  const onPressReadModeButtonMock = jest.fn();
 
   const tree = renderer.create(
     <FeedCard feed={stubObject.feed.contents[0]}
       onPressLikeButton ={onPressLikeButtonMock()}
       onPressCommentButton ={onPressCommentButtonMock()}
-      onPressReadModeButton ={onPressReadModeButton()}
+      onPressReadModeButton ={onPressReadModeButtonMock()}
       />
   ).toJSON();
   expect(tree).toMatchSnapshot();

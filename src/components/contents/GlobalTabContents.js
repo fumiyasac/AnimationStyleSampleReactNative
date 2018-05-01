@@ -12,7 +12,8 @@ import {
 
 import {
   Drawer,
-  Container
+  Container,
+  Content
 } from 'native-base';
 
 // react-native-router-fluxのインポート宣言(Actionを使用)
@@ -21,13 +22,13 @@ import { Actions } from 'react-native-router-flux';
 // グローバルコンテンツ用の共通コンポーネント
 import GlobalHeader from '../common/GlobalHeader';
 import GlobalFooter from '../common/GlobalFooter';
-import GlobalContainer from '../common/GlobalContainer';
 import GlobalTab from '../common/GlobalTab';
 
 // サイドメニュー用のコンポーネント
 import GlobalSideMenu from './GlobalSideMenu';
 
 // スクリーン表示用のコンポーネント
+import CommonScreenContainer from '../common/CommonScreenContainer';
 import FeedScreen from './screen/feed/FeedScreen';
 
 // タブ表示用の要素
@@ -101,8 +102,7 @@ export default class GlobalTabContents extends React.Component {
 
   // ヘッダーの設定ボタンを押下した際の処理
   _onPressSettingButton = () => {
-    // Debug.
-    console.log("ヘッダーの設定ボタンを押下した際の処理");
+    Actions.SettingContents();
   };
 
   // ドロワーメニュー経由でコンテンツを更新する際の処理
@@ -157,7 +157,7 @@ export default class GlobalTabContents extends React.Component {
             title={this._showTitle(selectedIndex)}
             onPressMenuButton={ () => this._onPressMenuButton() }
             onPressSettingButton={ () => this._onPressSettingButton() } />
-          <GlobalContainer screen={this._showContents(selectedIndex)} />
+          <CommonScreenContainer screen={this._showContents(selectedIndex)} />
           <GlobalFooter tabs={this._showGlobalTabs()} />
         </Container>
       </Drawer>

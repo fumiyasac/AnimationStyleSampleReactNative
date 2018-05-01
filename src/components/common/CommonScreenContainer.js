@@ -10,7 +10,7 @@ import {
   Content
 } from 'native-base';
 
-export default class GlobalContainer extends React.Component {
+export default class CommonScreenContainer extends React.Component {
   render() {
     const { screen } = this.props;
     return (
