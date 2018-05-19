@@ -17,13 +17,12 @@ import {
   Button
 } from 'native-base';
 
-export default class AuthFormSubmitButton extends React.Component {
+export default class AuthFormSubmittingButton extends React.Component {
   render() {
-    const { onPressSubmitButton } = this.props;
     return (
       <View style={styles.submitButtonView}>
-        <Button onPress={onPressSubmitButton} style={styles.submitButtonBase} block>
-          <Text style={styles.submitButtonText}>ユーザー情報を登録・認証する</Text>
+        <Button style={styles.submitButtonBase} block disabled>
+          <Text style={styles.submitButtonText}>処理中です...</Text>
         </Button>
       </View>
     );

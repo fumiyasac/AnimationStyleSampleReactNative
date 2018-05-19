@@ -7,32 +7,33 @@
 import React, { Component } from 'react';
 
 import { 
-  Form,
-  Item,
-  Input,
-  Label
+  Form
 } from 'native-base';
 
 // 認証コンテンツ用の共通コンポーネント
 import AuthFormIntro from './AuthFormIntro';
+import AuthFormInputMail from './AuthFormInputMail';
+import AuthFormInputPassword from './AuthFormInputPassword';
 import AuthFormErrorMessage from './AuthFormErrorMessage';
 import AuthFormSubmitButton from './AuthFormSubmitButton';
+import AuthFormSubmittingButton from './AuthFormSubmittingButton';
 
 export default class AuthForm extends React.Component {
+  // TODO: Reduxとのマッピングを行う
   render() {
     return (
       <Form>
         <AuthFormIntro />
-        <Item stackedLabel last>
-          <Label>ユーザー名:</Label>
-          <Input />
-        </Item>
-        <Item stackedLabel last>
-          <Label>パスワード:</Label>
-          <Input />
-        </Item>
-        <AuthFormErrorMessage />
-        <AuthFormSubmitButton />
+        <AuthFormInputMail
+          value={""}
+          onChangeText={ (email) => { console.log(email); } } 
+          />
+        <AuthFormInputPassword 
+          value={""} 
+          onChangeText={ (password) => { console.log(password); } } 
+          />
+        <AuthFormErrorMessage errorMessage={"処理エラーが発生しました。"} />
+        <AuthFormSubmitButton onPressSubmitButton={ () => { console.log("認証ボタン押下"); } } />
       </Form>
     );
   };

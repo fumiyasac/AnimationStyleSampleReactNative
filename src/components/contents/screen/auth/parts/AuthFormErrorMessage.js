@@ -18,16 +18,17 @@ import {
 
 export default class AuthFormErrorMessage extends React.Component {
   render() {
+    const { errorMessage } = this.props;
     return (
       <View>
-        <Text style={styles.errorMessage}>処理エラーが発生しました。</Text>
+        <Text style={styles.message}>{errorMessage}</Text>
       </View>
     );
   };
 }
 
 const styles = StyleSheet.create({
-  errorMessage: {
+  message: {
     paddingTop: 14,
     paddingBottom: 14,
     paddingLeft: 10,

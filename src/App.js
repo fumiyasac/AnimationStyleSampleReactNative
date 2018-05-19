@@ -62,8 +62,8 @@ export default class App extends React.Component {
       <Provider store={store}>
         <Router>
           <Scene key="root">
-            <Scene key="AuthContents" initial={true} component={AuthContents} hideNavBar={true} />
-            <Scene key="GlobalTabContents" component={GlobalTabContents} hideNavBar={true} />
+            <Scene key="AuthContents" component={AuthContents} hideNavBar={true} />
+            <Scene key="GlobalTabContents" initial={true} component={GlobalTabContents} hideNavBar={true} />
             <Scene key="SettingContents" component={SettingContents} hideNavBar={true} />
             <Scene key="WebViewContents" component={WebViewContents} hideNavBar={true} />
           </Scene>
