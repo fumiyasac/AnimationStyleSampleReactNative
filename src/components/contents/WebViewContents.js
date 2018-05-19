@@ -21,9 +21,6 @@ import { Actions } from 'react-native-router-flux';
 // ページコンテンツ用の共通コンポーネント
 import PageHeader from '../common/PageHeader';
 
-// スクリーン表示用のコンポーネント
-import CommonScreenContainer from '../common/CommonScreenContainer';
-
 export default class WebViewContents extends React.Component {
 
   // ヘッダーの戻るボタンを押下した際の処理
@@ -32,7 +29,7 @@ export default class WebViewContents extends React.Component {
   };
 
   render() {
-    // MEMO: この部分はWebページを表示するだけなのでScreen用のComponentは実装しない
+    // MEMO: この部分はWebページを表示するだけなので、RNRFからのパラメータを受け取ってURLを表示するような形にする
     const { headerTitle, linkUrl } = this.props;
     return (
       <Container style={styles.container}>
