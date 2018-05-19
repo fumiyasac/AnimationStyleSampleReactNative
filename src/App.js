@@ -12,6 +12,7 @@ import { Router, Scene } from 'react-native-router-flux';
 // 自作コンポーネント
 import GlobalTabContents from './components/contents/GlobalTabContents';
 import SettingContents from './components/contents/SettingContents';
+import WebViewContents from './components/contents/WebViewContents';
 
 export default class App extends React.Component {
   render() {
@@ -20,6 +21,7 @@ export default class App extends React.Component {
         <Scene key="root">
           <Scene key="GlobalTabContents" initial={true} component={GlobalTabContents} hideNavBar={true} />
           <Scene key="SettingContents" component={SettingContents} hideNavBar={true} />
+          <Scene key="WebViewContents" component={WebViewContents} hideNavBar={true} />
         </Scene>
       </Router>
     );
