@@ -24,7 +24,7 @@ import firebase from 'firebase';
 // reducerのインポート宣言
 import reducers from './redux/reducers';
 
-// configのインポート宣言
+// configのインポート宣言 ※config/index.jsを作成し下記を定義(Firebaseから持ってくる値)
 import { 
   API_KEY,
   AUTH_DOMAIN,
@@ -34,6 +34,7 @@ import {
 } from './config';
 
 // 自作コンポーネント
+import AuthContents from './components/contents/AuthContents';
 import GlobalTabContents from './components/contents/GlobalTabContents';
 import SettingContents from './components/contents/SettingContents';
 import WebViewContents from './components/contents/WebViewContents';
@@ -61,7 +62,8 @@ export default class App extends React.Component {
       <Provider store={store}>
         <Router>
           <Scene key="root">
-            <Scene key="GlobalTabContents" initial={true} component={GlobalTabContents} hideNavBar={true} />
+            <Scene key="AuthContents" initial={true} component={AuthContents} hideNavBar={true} />
+            <Scene key="GlobalTabContents" component={GlobalTabContents} hideNavBar={true} />
             <Scene key="SettingContents" component={SettingContents} hideNavBar={true} />
             <Scene key="WebViewContents" component={WebViewContents} hideNavBar={true} />
           </Scene>
