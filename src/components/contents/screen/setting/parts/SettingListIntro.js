@@ -45,7 +45,6 @@ const styles = StyleSheet.create({
   comment: {
     paddingTop: 8,
     paddingBottom: 8,
-    lineHeight: 18,
     fontSize: 13
   }
 });

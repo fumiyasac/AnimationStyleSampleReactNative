@@ -172,7 +172,6 @@ exports[`SettingListコンポーネントが正しく表示されること 1`] =
                 },
                 Object {
                   "fontSize": 13,
-                  "lineHeight": 18,
                   "paddingBottom": 8,
                   "paddingTop": 8,
                 },
