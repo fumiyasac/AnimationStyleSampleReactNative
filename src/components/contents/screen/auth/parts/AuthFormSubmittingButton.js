@@ -35,14 +35,14 @@ const styles = StyleSheet.create({
     paddingRight: 10
   },
   submitButtonBase: {
-    backgroundColor: '#4169e1'
+    backgroundColor: '#dddddd'
   },
   submitButtonText: {
     paddingTop: 8,
     paddingBottom: 8,
     fontSize: 13,
     alignSelf: 'center',
-    color: '#ffffff',
-    backgroundColor: '#4169e1'
+    color: '#999999',
+    backgroundColor: '#dddddd'
   }
 });
