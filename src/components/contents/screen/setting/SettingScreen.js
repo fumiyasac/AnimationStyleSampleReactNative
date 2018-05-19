@@ -11,7 +11,6 @@ import {
 } from 'react-native';
 
 import {
-  Container,
   Content
 } from 'native-base';
 
@@ -21,33 +20,18 @@ import SettingList from './parts/SettingList';
 // 設定コンテンツのリスト
 let settingItems = {
   "items": [
-    { title: "設定コンテンツその1", onPressListItem: () => console.log("test") },
-    { title: "設定コンテンツその2", onPressListItem: () => console.log("test") },
-    { title: "設定コンテンツその3", onPressListItem: () => console.log("test") },
-    { title: "設定コンテンツその4", onPressListItem: () => console.log("test") },
-    { title: "設定コンテンツその5", onPressListItem: () => console.log("test") },
-    { title: "設定コンテンツその6", onPressListItem: () => console.log("test") },
-    { title: "設定コンテンツその7", onPressListItem: () => console.log("test") },
-    { title: "設定コンテンツその8", onPressListItem: () => console.log("test") },
-    { title: "設定コンテンツその9", onPressListItem: () => console.log("test") },
+    { title: "Twitter", onPressListItem: () => console.log("Twitter") },
+    { title: "Facebook", onPressListItem: () => console.log("Facebook") },
+    { title: "Github", onPressListItem: () => console.log("Github") },
+    { title: "Slideshare", onPressListItem: () => console.log("Slideshare") },
+    { title: "Qiita", onPressListItem: () => console.log("Qiita") },
   ]
 };
 
 export default class SettingScreen extends React.Component {
   render() {
     return (
-      <Container style={styles.container}>
-        <Content>
-          <SettingList settingItems={settingItems} />
-        </Content>
-      </Container>
+      <SettingList settingItems={settingItems} />
     );
   };
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#ffffff'
-  }
-});

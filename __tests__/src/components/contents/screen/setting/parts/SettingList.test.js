@@ -10,9 +10,11 @@ it('SettingListコンポーネントが正しく表示されること', () => {
 
 	let stubObject = {
 		"items": [
-			{ title: "設定コンテンツその1", onPressListItem: onPressListItemMock() },
-			{ title: "設定コンテンツその2", onPressListItem: onPressListItemMock() },
-			{ title: "設定コンテンツその3", onPressListItem: onPressListItemMock() },
+			{ title: "Twitter", onPressListItem: onPressListItemMock() },
+			{ title: "Facebook", onPressListItem: onPressListItemMock() },
+			{ title: "Github", onPressListItem: onPressListItemMock() },
+			{ title: "Slideshare", onPressListItem: onPressListItemMock() },
+			{ title: "Qiita", onPressListItem: onPressListItemMock() },
 		]
 	};
 

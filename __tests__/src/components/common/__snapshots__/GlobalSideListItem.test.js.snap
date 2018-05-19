@@ -31,9 +31,9 @@ exports[`GlobalSideListItemコンポーネントが正しく表示されるこ�
           "borderBottomWidth": 0.5,
           "borderColor": "#c9c9c9",
           "flexDirection": "row",
-          "marginLeft": 15,
+          "marginLeft": 16,
           "paddingBottom": 13,
-          "paddingRight": 15,
+          "paddingRight": 16,
           "paddingTop": 13,
         },
         Object {

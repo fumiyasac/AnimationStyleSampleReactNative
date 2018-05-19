@@ -3,13 +3,20 @@
 exports[`FeedCardコンポーネントが正しく表示されること 1`] = `
 <RCTScrollView
   automaticallyAdjustContentInsets={false}
-  contentContainerStyle={undefined}
+  contentContainerStyle={
+    Array [
+      Object {
+        "padding": undefined,
+      },
+      undefined,
+    ]
+  }
   contentInset={
     Object {
       "bottom": 0,
     }
   }
-  enableAutoAutomaticScroll={true}
+  enableAutomaticScroll={true}
   enableResetScrollToCoords={true}
   extraHeight={75}
   extraScrollHeight={0}

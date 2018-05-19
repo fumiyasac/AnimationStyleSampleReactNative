@@ -89,7 +89,6 @@ exports[`GlobalTabコンポーネントが正しく表示されること 1`] = `
           "color": "#fff",
           "fontFamily": "System",
           "fontSize": 16.5,
-          "lineHeight": 19,
           "marginLeft": 0,
           "marginRight": 0,
           "paddingLeft": 16,

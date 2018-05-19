@@ -107,10 +107,10 @@ exports[`GlobalHeaderコンポーネントが正しく表示されること 1`] 
                 },
                 Object {
                   "color": "#007aff",
-                  "fontSize": 33,
+                  "fontSize": 30,
                   "marginLeft": 2,
                   "marginRight": 2,
-                  "marginTop": 2,
+                  "marginTop": 0,
                   "paddingTop": 2,
                 },
                 Object {
@@ -240,10 +240,10 @@ exports[`GlobalHeaderコンポーネントが正しく表示されること 1`] 
                 },
                 Object {
                   "color": "#007aff",
-                  "fontSize": 27,
+                  "fontSize": 30,
                   "marginLeft": 2,
                   "marginRight": 2,
-                  "marginTop": 2,
+                  "marginTop": 0,
                   "paddingTop": 2,
                 },
                 Object {
