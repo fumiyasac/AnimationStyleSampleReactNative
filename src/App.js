@@ -15,6 +15,9 @@ import { createStore, applyMiddleware } from 'redux';
 // redux-thunkのインポート宣言
 import ReduxThunk from 'redux-thunk';
 
+// redux-loggerのインポート宣言
+import logger from 'redux-logger';
+
 // react-native-router-fluxのインポート宣言(Router, Sceneを使用)
 import { Router, Scene } from 'react-native-router-flux';
 
@@ -57,7 +60,7 @@ export default class App extends React.Component {
 
   render() {
     // Redux本来のdispatch処理が実行される前にMiddlewareの処理を実行する
-    const store = createStore(reducers, {}, applyMiddleware(ReduxThunk));
+    const store = createStore(reducers, {}, applyMiddleware(ReduxThunk, logger));
     return (
       <Provider store={store}>
         <Router>
