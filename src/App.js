@@ -52,7 +52,7 @@ export default class App extends React.Component {
       messagingSenderId: MESSAGING_SENDER_ID
     };
     // firebaseを有効にする
-    //firebase.initializeApp(config);
+    firebase.initializeApp(config);
   }
 
   render() {
@@ -62,10 +62,14 @@ export default class App extends React.Component {
       <Provider store={store}>
         <Router>
           <Scene key="root">
-            <Scene key="AuthContents" component={AuthContents} hideNavBar={true} />
-            <Scene key="GlobalTabContents" initial={true} component={GlobalTabContents} hideNavBar={true} />
-            <Scene key="SettingContents" component={SettingContents} hideNavBar={true} />
-            <Scene key="WebViewContents" component={WebViewContents} hideNavBar={true} />
+            <Scene key="auth">
+              <Scene key="AuthContents" component={AuthContents} hideNavBar={true} />
+            </Scene>
+            <Scene key="main">
+              <Scene key="GlobalTabContents" initial={true} component={GlobalTabContents} hideNavBar={true} />
+              <Scene key="SettingContents" component={SettingContents} hideNavBar={true} />
+              <Scene key="WebViewContents" component={WebViewContents} hideNavBar={true} />
+            </Scene>
           </Scene>
         </Router>
       </Provider>

@@ -7,11 +7,12 @@
 
 import { combineReducers } from 'redux';
 
+import AuthReducer from './AuthReducer';
 import NewsReducer from './NewsReducer';
 import FeedReducer from './FeedReducer';
 
-// 各々の要素に関するReducerのインポート宣言
 export default combineReducers({
+  auth: AuthReducer,
   feed: FeedReducer,
   news: NewsReducer
 });

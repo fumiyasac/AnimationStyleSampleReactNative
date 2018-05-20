@@ -1,5 +1,5 @@
 /**
- * actions/index.js
+ * actions/NewsActions.js
  */
 
 import { 
