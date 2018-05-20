@@ -19,10 +19,11 @@ import {
 
 export default class AuthFormSubmittingButton extends React.Component {
   render() {
+    const { buttonText } = this.props;
     return (
       <View style={styles.submitButtonView}>
         <Button style={styles.submitButtonBase} block disabled>
-          <Text style={styles.submitButtonText}>処理中です...</Text>
+          <Text style={styles.submitButtonText}>{buttonText}</Text>
         </Button>
       </View>
     );
@@ -31,6 +32,7 @@ export default class AuthFormSubmittingButton extends React.Component {
 
 const styles = StyleSheet.create({
   submitButtonView: {
+    paddingBottom: 15,
     paddingLeft: 10,
     paddingRight: 10
   },

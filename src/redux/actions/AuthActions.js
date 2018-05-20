@@ -13,74 +13,60 @@ import { Actions } from 'react-native-router-flux';
 
 // 認証関連のアクションタイプ定義のインポート宣言
 import { 
-  EMAIL_CHANGED,
+  MAIL_CHANGED,
   PASSWORD_CHANGED,
+  REQUEST_USER,
   LOGIN_USER_SUCCESS,
-  LOGIN_USER_FAILURE,
-  LOGIN_USER,
-  LOGIN_USER_INVALID
+  LOGIN_USER_FAILURE
 } from './types';
 
 // メールアドレス入力時に実行されるメソッド
-export const emailChanged = (text) => {
-
-  // アクションとステートの変更後に変わる値を設定
-  return { type: EMAIL_CHANGED, payload: text };
+export const mailChanged = (text) => {
+  return { type: MAIL_CHANGED, payload: text };
 };
 
 // パスワード入力時に実行されるメソッド
 export const passwordChanged = (text) => {
-
-  // アクションとステートの変更後に変わる値を設定
   return { type: PASSWORD_CHANGED, payload: text };
 };
 
-// ログインボタン押下時に実行されるメソッド
-export const loginUser = ({ email, password }) => {
+// ユーザー作成ボタン押下時に実行されるメソッド
+export const createUser = ({ mail, password }) => {
 
   // アクションの実行とFirebaseへの認証処理を行う(非同期での実行)
   return (dispatch) => {
 
-    // ステートの更新を行う（ログイン中状態のステータスにする）
-    dispatch({ type: LOGIN_USER });
+    dispatch({ type: REQUEST_USER });
 
-    // サインイン用のfirebaseのメソッドauth().signInWithEmailAndPassword(email, password)を利用する
-    // 入力されたメールアドレス・パスワードを元にFirebaseの認証を行う
-    firebase.auth().signInWithEmailAndPassword(email, password)
+    // 入力されたメールアドレス・パスワードをFirebaseへ登録する
+    firebase.auth().createUserWithEmailAndPassword(mail, password)
       .then(user => loginUserSuccess(dispatch, user))
-      .catch((error) => {
-
-        // エラー時のデバッグ用ログ出力
-        console.log(error);
-        loginUserInvalid(dispatch);
-
-        // 入力されたメールアドレス・パスワードをFirebaseへ登録する
-        firebase.auth().createUserWithEmailAndPassword(email, password)
-          .then(user => loginUserSuccess(dispatch, user))
-          .catch(() => loginUserFail(dispatch));
-      }
-    );
+      .catch(() => loginUserFailure(dispatch));
   };
 };
 
-// 形式が正しくない場合に実行されるメソッド
-const loginUserInvalid = (dispatch) => {
+// ログインボタン押下時に実行されるメソッド
+export const loginUser = ({ mail, password }) => {
 
-  // ステートの更新を行う（ログイン失敗状態のステータスにする）
-  dispatch({ type: LOGIN_USER_INVALID });
+  // アクションの実行とFirebaseへの認証処理を行う(非同期での実行)
+  return (dispatch) => {
+
+    dispatch({ type: REQUEST_USER });
+
+    // サインイン用のfirebaseのメソッドauth().signInWithEmailAndPassword(email, password)を利用する
+    firebase.auth().signInWithEmailAndPassword(mail, password)
+      .then(user => loginUserSuccess(dispatch, user))
+      .catch(() => loginUserFailure(dispatch));
+  };
 };
 
 // ログイン認証失敗時に実行されるメソッド
-const loginUserFail = (dispatch) => {
-
-  // ステートの更新を行う（ログイン失敗状態のステータスにする）
+const loginUserFailure = (dispatch) => {
   dispatch({ type: LOGIN_USER_FAILURE });
 };
 
 // ログイン認証成功時に実行されるメソッド
 const loginUserSuccess = (dispatch, user) => {
-
-  // ステートの更新を行う（ログイン成功状態のステータスにする）
   dispatch({ type: LOGIN_USER_SUCCESS, payload: user });
 
   // メインの画面へ遷移する

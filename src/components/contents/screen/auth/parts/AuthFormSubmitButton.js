@@ -19,11 +19,11 @@ import {
 
 export default class AuthFormSubmitButton extends React.Component {
   render() {
-    const { onPressSubmitButton } = this.props;
+    const { buttonText, onPressSubmitButton } = this.props;
     return (
       <View style={styles.submitButtonView}>
         <Button onPress={onPressSubmitButton} style={styles.submitButtonBase} block>
-          <Text style={styles.submitButtonText}>ユーザー情報を登録・認証する</Text>
+          <Text style={styles.submitButtonText}>{buttonText}</Text>
         </Button>
       </View>
     );
@@ -32,6 +32,7 @@ export default class AuthFormSubmitButton extends React.Component {
 
 const styles = StyleSheet.create({
   submitButtonView: {
+    paddingBottom: 15,
     paddingLeft: 10,
     paddingRight: 10
   },
