@@ -1,0 +1,443 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AuthFormコンポーネントが正しく表示されること 1`] = `
+<View
+  style={Object {}}
+  virtual={undefined}
+>
+  <View>
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
+        Array [
+          Object {
+            "color": "#000",
+            "fontFamily": "System",
+            "fontSize": 16,
+          },
+          Object {
+            "fontSize": 14,
+            "fontWeight": "bold",
+            "paddingLeft": 10,
+            "paddingRight": 10,
+            "paddingTop": 14,
+          },
+        ]
+      }
+      uppercase={false}
+      virtual={undefined}
+    >
+      Firebase + NativeBase Sample
+    </Text>
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      note={true}
+      style={
+        Array [
+          Object {
+            "color": "#a7a7a7",
+            "fontFamily": "System",
+            "fontSize": 14,
+          },
+          Object {
+            "fontSize": 13,
+            "padding": 10,
+          },
+        ]
+      }
+      uppercase={false}
+      virtual={undefined}
+    >
+      こちらはFirebaseとNativeBaseを組み合わせて作成したサンプルの事例になります。※お手元で動かす場合は、お使いの際にはご自身のFirebaseアカウント情報をご利用下さい。
+    </Text>
+  </View>
+  <View
+    accessibilityComponentType={undefined}
+    accessibilityLabel={undefined}
+    accessibilityTraits={undefined}
+    accessible={true}
+    collapsable={undefined}
+    hasTVPreferredFocus={undefined}
+    hitSlop={undefined}
+    isTVSelectable={true}
+    nativeID={undefined}
+    onLayout={undefined}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "transparent",
+        "borderBottomWidth": 1,
+        "borderColor": "#D9D5DC",
+        "borderLeftWidth": 0,
+        "borderRightWidth": 0,
+        "borderTopWidth": 0,
+        "flexDirection": null,
+        "height": 65,
+        "marginLeft": 0,
+        "opacity": 1,
+        "paddingLeft": 15,
+      }
+    }
+    testID={undefined}
+    tvParallaxProperties={undefined}
+  >
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
+        Array [
+          Object {
+            "alignSelf": "flex-start",
+            "color": "#575757",
+            "fontSize": 15,
+            "left": null,
+            "paddingLeft": null,
+            "paddingRight": 5,
+            "paddingTop": 5,
+            "position": null,
+            "right": null,
+            "top": 5,
+          },
+          Object {
+            "color": "#333333",
+            "fontSize": 13,
+            "fontWeight": "bold",
+          },
+        ]
+      }
+      virtual={undefined}
+    >
+      メールアドレス:
+    </Text>
+    <TextInput
+      allowFontScaling={true}
+      editable={true}
+      onChangeText={[Function]}
+      placeholder="例）username@example.com"
+      placeholderTextColor="#575757"
+      style={
+        Array [
+          Object {
+            "alignSelf": "stretch",
+            "color": "#000",
+            "flex": 1,
+            "fontSize": 17,
+            "height": 50,
+            "marginLeft": null,
+            "paddingLeft": null,
+            "paddingRight": 5,
+            "top": 1.5,
+            "width": null,
+          },
+          Object {
+            "color": "#666666",
+            "fontSize": 13,
+          },
+        ]
+      }
+      underlineColorAndroid="rgba(0,0,0,0)"
+      virtual={undefined}
+    />
+  </View>
+  <View
+    accessibilityComponentType={undefined}
+    accessibilityLabel={undefined}
+    accessibilityTraits={undefined}
+    accessible={true}
+    collapsable={undefined}
+    hasTVPreferredFocus={undefined}
+    hitSlop={undefined}
+    isTVSelectable={true}
+    nativeID={undefined}
+    onLayout={undefined}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "transparent",
+        "borderBottomWidth": 1,
+        "borderColor": "#D9D5DC",
+        "borderLeftWidth": 0,
+        "borderRightWidth": 0,
+        "borderTopWidth": 0,
+        "flexDirection": null,
+        "height": 65,
+        "marginLeft": 0,
+        "opacity": 1,
+        "paddingLeft": 15,
+      }
+    }
+    testID={undefined}
+    tvParallaxProperties={undefined}
+  >
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
+        Array [
+          Object {
+            "alignSelf": "flex-start",
+            "color": "#575757",
+            "fontSize": 15,
+            "left": null,
+            "paddingLeft": null,
+            "paddingRight": 5,
+            "paddingTop": 5,
+            "position": null,
+            "right": null,
+            "top": 5,
+          },
+          Object {
+            "color": "#333333",
+            "fontSize": 13,
+            "fontWeight": "bold",
+          },
+        ]
+      }
+      virtual={undefined}
+    >
+      パスワード:
+    </Text>
+    <TextInput
+      allowFontScaling={true}
+      editable={true}
+      onChangeText={[Function]}
+      placeholder="例）●●●●●●●●"
+      placeholderTextColor="#575757"
+      secureTextEntry={true}
+      style={
+        Array [
+          Object {
+            "alignSelf": "stretch",
+            "color": "#000",
+            "flex": 1,
+            "fontSize": 17,
+            "height": 50,
+            "marginLeft": null,
+            "paddingLeft": null,
+            "paddingRight": 5,
+            "top": 1.5,
+            "width": null,
+          },
+          Object {
+            "color": "#666666",
+            "fontSize": 13,
+          },
+        ]
+      }
+      underlineColorAndroid="rgba(0,0,0,0)"
+      virtual={undefined}
+    />
+  </View>
+  <View>
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
+      style={
+        Array [
+          Object {
+            "color": "#000",
+            "fontFamily": "System",
+            "fontSize": 16,
+          },
+          Object {
+            "alignSelf": "center",
+            "color": "#ff0000",
+            "fontSize": 13,
+            "paddingBottom": 14,
+            "paddingLeft": 10,
+            "paddingRight": 10,
+            "paddingTop": 14,
+          },
+        ]
+      }
+      uppercase={false}
+      virtual={undefined}
+    >
+      
+    </Text>
+  </View>
+  <View
+    style={
+      Object {
+        "paddingBottom": 15,
+        "paddingLeft": 10,
+        "paddingRight": 10,
+      }
+    }
+  >
+    <View
+      accessibilityComponentType={undefined}
+      accessibilityLabel={undefined}
+      accessibilityTraits={undefined}
+      accessible={true}
+      collapsable={undefined}
+      hasTVPreferredFocus={undefined}
+      hitSlop={undefined}
+      isTVSelectable={true}
+      nativeID={undefined}
+      onLayout={undefined}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "alignItems": "center",
+          "alignSelf": "stretch",
+          "backgroundColor": "#4169e1",
+          "borderBottomWidth": null,
+          "borderColor": "#007aff",
+          "borderLeftWidth": null,
+          "borderRadius": 5,
+          "borderRightWidth": null,
+          "borderTopWidth": null,
+          "elevation": 2,
+          "flexDirection": "row",
+          "height": 45,
+          "justifyContent": "center",
+          "opacity": 1,
+          "paddingBottom": 6,
+          "paddingTop": 6,
+        }
+      }
+      testID={undefined}
+      tvParallaxProperties={undefined}
+    >
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Array [
+            Object {
+              "backgroundColor": "transparent",
+              "color": "#fff",
+              "fontFamily": "System",
+              "fontSize": 16.5,
+              "marginLeft": 0,
+              "marginRight": 0,
+              "paddingLeft": 16,
+              "paddingRight": 16,
+            },
+            Object {
+              "alignSelf": "center",
+              "backgroundColor": "#4169e1",
+              "color": "#ffffff",
+              "fontSize": 13,
+              "paddingBottom": 8,
+              "paddingTop": 8,
+            },
+          ]
+        }
+        uppercase={false}
+        virtual={undefined}
+      >
+        既存ユーザー情報でログインする
+      </Text>
+    </View>
+  </View>
+  <View
+    style={
+      Object {
+        "paddingBottom": 15,
+        "paddingLeft": 10,
+        "paddingRight": 10,
+      }
+    }
+  >
+    <View
+      accessibilityComponentType={undefined}
+      accessibilityLabel={undefined}
+      accessibilityTraits={undefined}
+      accessible={true}
+      collapsable={undefined}
+      hasTVPreferredFocus={undefined}
+      hitSlop={undefined}
+      isTVSelectable={true}
+      nativeID={undefined}
+      onLayout={undefined}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "alignItems": "center",
+          "alignSelf": "stretch",
+          "backgroundColor": "#4169e1",
+          "borderBottomWidth": null,
+          "borderColor": "#007aff",
+          "borderLeftWidth": null,
+          "borderRadius": 5,
+          "borderRightWidth": null,
+          "borderTopWidth": null,
+          "elevation": 2,
+          "flexDirection": "row",
+          "height": 45,
+          "justifyContent": "center",
+          "opacity": 1,
+          "paddingBottom": 6,
+          "paddingTop": 6,
+        }
+      }
+      testID={undefined}
+      tvParallaxProperties={undefined}
+    >
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Array [
+            Object {
+              "backgroundColor": "transparent",
+              "color": "#fff",
+              "fontFamily": "System",
+              "fontSize": 16.5,
+              "marginLeft": 0,
+              "marginRight": 0,
+              "paddingLeft": 16,
+              "paddingRight": 16,
+            },
+            Object {
+              "alignSelf": "center",
+              "backgroundColor": "#4169e1",
+              "color": "#ffffff",
+              "fontSize": 13,
+              "paddingBottom": 8,
+              "paddingTop": 8,
+            },
+          ]
+        }
+        uppercase={false}
+        virtual={undefined}
+      >
+        新規ユーザー情報を登録する
+      </Text>
+    </View>
+  </View>
+</View>
+`;
