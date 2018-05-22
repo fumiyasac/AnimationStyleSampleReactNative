@@ -31,19 +31,23 @@ import AuthFormSubmittingButton from './AuthFormSubmittingButton';
 
 class AuthForm extends React.Component {
 
+  // メールアドレスの入力値変更時の処理
   _onMailChange = (text) => {
     this.props.mailChanged(text);
   };
 
+  // パスワードの入力値変更時の処理
   _onPasswordChange = (text) => {
     this.props.passwordChanged(text);
   };
-  
+
+  // ログインボタン押下時の処理
   _onPressLoginUserSubmitButton = () => {
     const { mail, password } = this.props;
     this.props.loginUser({ mail, password });
   };
-  
+
+  // ログインボタン表示処理
   _renderLoginUserButton = () => {
     if (this.props.loading) {
       return <AuthFormSubmittingButton buttonText={"既存ユーザー情報でログインする"} />;
@@ -52,11 +56,13 @@ class AuthForm extends React.Component {
     }
   };
 
+  // 新規登録ボタン押下時の処理
   _onPressCreateUserSubmitButton = () => {
     const { mail, password } = this.props;
     this.props.createUser({ mail, password });
   };
-  
+
+  // 新規登録ボタン表示処理
   _renderCreateUserButton = () => {
     if (this.props.loading) {
       return <AuthFormSubmittingButton buttonText={"新規ユーザー情報を登録する"} />;
