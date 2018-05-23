@@ -23,11 +23,9 @@ export default class AuthHeader extends React.Component {
     const { title } = this.props;
     return (
       <Header iosBarStyle="light-content" style={styles.headerBackgroundColor} hasTabs>
-        <Left />
         <Body>
           <Title style={styles.titleColor}>{title}</Title>
         </Body>
-        <Right />
       </Header>
     );
   };

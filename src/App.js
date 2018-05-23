@@ -37,6 +37,7 @@ import {
 } from './config';
 
 // 自作コンポーネント
+import TutorialContents from './components/contents/TutorialContents';
 import AuthContents from './components/contents/AuthContents';
 import GlobalTabContents from './components/contents/GlobalTabContents';
 import SettingContents from './components/contents/SettingContents';
@@ -66,6 +67,7 @@ export default class App extends React.Component {
         <Router>
           <Scene key="root">
             <Scene key="auth">
+              <Scene key="TutorialContents" initial={true} component={TutorialContents} hideNavBar={true} />
               <Scene key="AuthContents" component={AuthContents} hideNavBar={true} />
             </Scene>
             <Scene key="main">
