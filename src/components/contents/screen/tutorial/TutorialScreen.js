@@ -14,43 +14,52 @@ let tutorialContentsData = [
     key: 'tutorial1',
     title: '勉強記録をしっかり記録',
     titleStyle: {
-      color: '#fff'
+      color: '#ffffff',
+      fontWeight: 'bold'
     },
     image: require('./assets/tutorial1.jpg'),
     imageStyle: {
       width: 260,
       height: 260,
       borderRadius: 130,
+      borderWidth: 1.0,
+      borderColor: '#dddddd',
     },
-    backgroundColor: '#ddd',
+    backgroundColor: '#879fe7',
   },
   {
     key: 'tutorial2',
     title: '無理なく＆無駄なく',
     titleStyle: {
-      color: '#fff'
+      color: '#ffffff',
+      fontWeight: 'bold'
     },
     image: require('./assets/tutorial2.jpg'),
     imageStyle: {
       width: 260,
       height: 260,
       borderRadius: 130,
+      borderWidth: 1.0,
+      borderColor: '#dddddd',
     },
-    backgroundColor: '#ddd',
+    backgroundColor: '#879fe7',
   },
   {
     key: 'tutorial3',
     title: '書籍や参考書を活用',
     titleStyle: {
-      color: '#fff'
+      color: '#ffffff',
+      fontWeight: 'bold'
     },
     image: require('./assets/tutorial3.jpg'),
     imageStyle: {
       width: 260,
       height: 260,
       borderRadius: 130,
+      borderWidth: 1.0,
+      borderColor: '#dddddd',
     },
-    backgroundColor: '#ddd',
+    backgroundColor: '#879fe7',
   }
 ];
 

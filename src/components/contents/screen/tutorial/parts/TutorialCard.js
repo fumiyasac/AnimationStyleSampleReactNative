@@ -28,7 +28,9 @@ export default class TutorialCard extends React.Component {
     return (
       <View style={styles.background}>
         <AppIntroSlider style={styles.appTutorial}
-          slides={tutorialContentsData} 
+          slides={tutorialContentsData}
+          nextLabel={"次へ"}
+          doneLabel={"終了"}
           onDone={ () => { this._onPressOnboadingEndButton() } }
           />
       </View>

@@ -36,16 +36,6 @@ exports[`AuthHeaderコンポーネントが正しく表示されること 1`] = 
     <View
       style={
         Object {
-          "alignItems": "flex-start",
-          "alignSelf": "center",
-          "flex": 1,
-        }
-      }
-      virtual={undefined}
-    />
-    <View
-      style={
-        Object {
           "alignItems": "center",
           "alignSelf": "center",
           "flex": 1,
@@ -77,18 +67,6 @@ exports[`AuthHeaderコンポーネントが正しく表示されること 1`] = 
         登録・認証
       </Text>
     </View>
-    <View
-      style={
-        Object {
-          "alignItems": "flex-end",
-          "alignSelf": "center",
-          "flex": 1,
-          "flexDirection": "row",
-          "justifyContent": "flex-end",
-        }
-      }
-      virtual={undefined}
-    />
   </View>
 </View>
 `;
