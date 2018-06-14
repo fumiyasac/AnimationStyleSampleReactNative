@@ -23,16 +23,14 @@ import GlobalSideListItem from '../common/GlobalSideListItem';
 let drawerMainItems = {
   "headerTitle": "メニュー",
   "items": [
-    { title: "新着のお知らせ", selectedIndex: 4 },
-    { title: "お問い合わせ", selectedIndex: 5 }
+    { title: "新着のお知らせ", selectedIndex: 4 }
   ]
 };
 
 let drawerSubItems = {
   "headerTitle": "その他コンテンツ",
   "items": [
-    { title: "よくある質問", selectedIndex: 6 },
-    { title: "アプリの想い", selectedIndex: 7 }
+    { title: "よくある質問", selectedIndex: 5 }
   ]
 };
 

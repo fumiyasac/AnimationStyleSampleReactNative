@@ -15,17 +15,17 @@ import {
   List
 } from 'native-base';
 
-import SettingListIntro from './SettingListIntro';
-import SettingListItem from './SettingListItem';
+import QuestionListIntro from './QuestionListIntro';
+import QuestionListItem from './QuestionListItem';
 
-export default class SettingList extends React.Component {
+export default class QuestionList extends React.Component {
   render() {
-    const { settingItems } = this.props;
+    const { questionItems } = this.props;
     return (
       <Content style={styles.container}>
-        <SettingListIntro />
-        <List dataArray={settingItems.items} renderRow={ (item) =>
-          <SettingListItem title={item.title} onPressListItem={item.onPressListItem} />
+        <QuestionListIntro />
+        <List dataArray={questionItems.items} renderRow={ (item) =>
+          <QuestionListItem item={item} />
         } />
       </Content>
     );

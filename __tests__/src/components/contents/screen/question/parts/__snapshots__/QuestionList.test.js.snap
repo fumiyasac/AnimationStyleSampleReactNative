@@ -1,0 +1,248 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`QuestionListコンポーネントが正しく表示されること 1`] = `
+<RCTScrollView
+  automaticallyAdjustContentInsets={false}
+  contentContainerStyle={
+    Array [
+      Object {
+        "padding": undefined,
+      },
+      undefined,
+    ]
+  }
+  contentInset={
+    Object {
+      "bottom": 0,
+    }
+  }
+  enableAutomaticScroll={true}
+  enableResetScrollToCoords={true}
+  extraHeight={75}
+  extraScrollHeight={0}
+  getScrollResponder={[Function]}
+  handleOnScroll={[Function]}
+  keyboardDismissMode="interactive"
+  keyboardOpeningTime={250}
+  keyboardShouldPersistTaps="handled"
+  keyboardSpace={0}
+  onScroll={[Function]}
+  resetKeyboardSpace={[Function]}
+  resetScrollToCoords={
+    Object {
+      "x": 0,
+      "y": 0,
+    }
+  }
+  scrollEventThrottle={1}
+  scrollForExtraHeightOnAndroid={[Function]}
+  scrollToEnd={[Function]}
+  scrollToFocusedInput={[Function]}
+  scrollToPosition={[Function]}
+  showsVerticalScrollIndicator={true}
+  style={
+    Array [
+      Object {
+        "backgroundColor": "transparent",
+        "flex": 1,
+      },
+      Object {
+        "backgroundColor": "#ffffff",
+        "flex": 1,
+      },
+    ]
+  }
+  viewIsInsideTabBar={false}
+  virtual={undefined}
+>
+  <View>
+    <View>
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Array [
+            Object {
+              "color": "#000",
+              "fontFamily": "System",
+              "fontSize": 16,
+            },
+            Object {
+              "fontSize": 14,
+              "fontWeight": "bold",
+              "paddingLeft": 10,
+              "paddingRight": 10,
+              "paddingTop": 14,
+            },
+          ]
+        }
+        uppercase={false}
+        virtual={undefined}
+      >
+        このサンプルの利用について
+      </Text>
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        note={true}
+        style={
+          Array [
+            Object {
+              "color": "#a7a7a7",
+              "fontFamily": "System",
+              "fontSize": 14,
+            },
+            Object {
+              "fontSize": 13,
+              "padding": 10,
+            },
+          ]
+        }
+        uppercase={false}
+        virtual={undefined}
+      >
+        このサンプルを利用する際の注意事項等を記載しています。とはいっても免責事項みたいなものはないのでお気軽にどうぞ！
+      </Text>
+    </View>
+    <RCTScrollView
+      closeOnRowBeginSwipe={false}
+      closeOnRowPress={true}
+      closeOnScroll={true}
+      dataArray={
+        Array [
+          Object {
+            "content": "A. ご自分でデザインやアカウントが必要な部分を改変した上でご活用頂けましたら、特に問題はないかと思います。もし自分の環境で動かなかった等があればGithubのissue等へ記載をしていただければ幸いです。しかしながら回答によってはご対応が出来かねます場合があることも了承頂ければと思います。",
+            "title": "Q. このサンプルに改変や改良をしても大丈夫ですか？",
+          },
+        ]
+      }
+      dataSource={
+        ListViewDataSource {
+          "items": 1,
+        }
+      }
+      directionalDistanceChangeThreshold={2}
+      disableLeftSwipe={false}
+      disableRightSwipe={false}
+      enableEmptySections={true}
+      leftOpenValue={0}
+      previewFirstRow={false}
+      recalculateHiddenLayout={false}
+      renderRow={[Function]}
+      renderScrollComponent={[Function]}
+      rightOpenValue={0}
+      style={Object {}}
+      swipeToOpenPercent={50}
+      virtual={undefined}
+    >
+      <View>
+        <View
+          accessibilityComponentType={undefined}
+          accessibilityLabel={undefined}
+          accessibilityTraits={undefined}
+          accessible={true}
+          hasTVPreferredFocus={undefined}
+          hitSlop={undefined}
+          isTVSelectable={true}
+          nativeID={undefined}
+          onLayout={undefined}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={null}
+          testID={undefined}
+          tvParallaxProperties={undefined}
+        >
+          <View
+            noBorder={true}
+            style={
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "transparent",
+                "borderBottomWidth": null,
+                "borderColor": "#c9c9c9",
+                "flexDirection": "row",
+                "marginLeft": 16,
+                "paddingBottom": 13,
+                "paddingRight": 16,
+                "paddingTop": 13,
+              }
+            }
+            virtual={undefined}
+          >
+            <View
+              style={
+                Object {
+                  "alignItems": null,
+                  "alignSelf": null,
+                  "flex": 1,
+                }
+              }
+              virtual={undefined}
+            >
+              <Text
+                accessible={true}
+                allowFontScaling={true}
+                ellipsizeMode="tail"
+                style={
+                  Array [
+                    Object {
+                      "color": "#000",
+                      "fontFamily": "System",
+                      "fontSize": 16,
+                      "marginLeft": 10,
+                      "marginRight": 10,
+                    },
+                    Object {
+                      "color": "#555555",
+                      "fontSize": 14,
+                      "fontWeight": "bold",
+                      "paddingTop": 2,
+                    },
+                  ]
+                }
+                uppercase={false}
+                virtual={undefined}
+              >
+                Q. このサンプルに改変や改良をしても大丈夫ですか？
+              </Text>
+              <Text
+                accessible={true}
+                allowFontScaling={true}
+                ellipsizeMode="tail"
+                note={true}
+                style={
+                  Array [
+                    Object {
+                      "color": "#808080",
+                      "fontFamily": "System",
+                      "fontSize": 14,
+                      "fontWeight": "200",
+                      "marginLeft": 10,
+                      "marginRight": 10,
+                    },
+                    Object {
+                      "fontSize": 13,
+                      "paddingBottom": 8,
+                      "paddingTop": 8,
+                    },
+                  ]
+                }
+                uppercase={false}
+                virtual={undefined}
+              >
+                A. ご自分でデザインやアカウントが必要な部分を改変した上でご活用頂けましたら、特に問題はないかと思います。もし自分の環境で動かなかった等があればGithubのissue等へ記載をしていただければ幸いです。しかしながら回答によってはご対応が出来かねます場合があることも了承頂ければと思います。
+              </Text>
+            </View>
+          </View>
+        </View>
+      </View>
+    </RCTScrollView>
+  </View>
+</RCTScrollView>
+`;

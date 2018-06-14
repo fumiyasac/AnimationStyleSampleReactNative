@@ -12,8 +12,7 @@ import {
 
 import {
   Drawer,
-  Container,
-  Content
+  Container
 } from 'native-base';
 
 // react-native-router-fluxのインポート宣言(Actionを使用)
@@ -30,6 +29,7 @@ import GlobalSideMenu from './GlobalSideMenu';
 // スクリーン表示用のコンポーネント
 import CommonScreenContainer from '../common/CommonScreenContainer';
 import FeedScreen from './screen/feed/FeedScreen';
+import QuestionScreen from './screen/question/QuestionScreen';
 
 // タブ表示用の要素
 let screenItems = [
@@ -40,9 +40,7 @@ let screenItems = [
   { screen: "shopping", title: "お買い物", icon: "book" },
   // ドロワーと連動した部分
   { screen: "information", title: "新着のお知らせ" },
-  { screen: "contact", title: "お問い合わせ" },
   { screen: "question", title: "よくある質問" },
-  { screen: "mind", title: "アプリの想い" },
   // グローバルメニューと連動した部分
   { screen: "setting", title: "設定" }
 ];
@@ -68,6 +66,8 @@ export default class GlobalTabContents extends React.Component {
   // コンテンツを表示する
   _showContents = (index) => {
     switch (index) {
+      case 5:
+        return (<QuestionScreen />);
       default:
         return (<FeedScreen />);
     }

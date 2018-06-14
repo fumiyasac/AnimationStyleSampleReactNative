@@ -41,10 +41,16 @@ exports[`SettingListコンポーネントが正しく表示されること 1`] =
   scrollToPosition={[Function]}
   showsVerticalScrollIndicator={true}
   style={
-    Object {
-      "backgroundColor": "transparent",
-      "flex": 1,
-    }
+    Array [
+      Object {
+        "backgroundColor": "transparent",
+        "flex": 1,
+      },
+      Object {
+        "backgroundColor": "#ffffff",
+        "flex": 1,
+      },
+    ]
   }
   viewIsInsideTabBar={false}
   virtual={undefined}

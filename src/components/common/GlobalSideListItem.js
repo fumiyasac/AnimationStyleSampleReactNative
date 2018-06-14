@@ -19,18 +19,18 @@ export default class GlobalSideListItem extends React.Component {
   render() {
     const { title, onPressListItem } = this.props;
     return (
-      <ListItem style={styles.listItem} onPress={onPressListItem}>
-        <Text style={styles.listItemText}>{title}</Text>
+      <ListItem style={styles.sideListItem} onPress={onPressListItem} last>
+        <Text style={styles.sideListItemTitle}>{title}</Text>
       </ListItem>
     );
   };
 }
 
 const styles = StyleSheet.create({
-  listItem: {
+  sideListItem: {
     height: 50
   },
-  listItemText: {
+  sideListItemTitle: {
     fontSize: 12,
     fontWeight: 'bold',
     color: '#555555'

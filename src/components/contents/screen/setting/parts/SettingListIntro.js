@@ -12,7 +12,6 @@ import {
 } from 'react-native';
 
 import {
-  Content,
   Left,
   Body,
   ListItem,

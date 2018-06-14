@@ -22,6 +22,7 @@ exports[`GlobalSideListItemコンポーネントが正しく表示されるこ�
   tvParallaxProperties={undefined}
 >
   <View
+    last={true}
     onPress={undefined}
     style={
       Array [
@@ -31,10 +32,12 @@ exports[`GlobalSideListItemコンポーネントが正しく表示されるこ�
           "borderBottomWidth": 0.5,
           "borderColor": "#c9c9c9",
           "flexDirection": "row",
-          "marginLeft": 16,
+          "marginLeft": -15,
           "paddingBottom": 13,
+          "paddingLeft": 30,
           "paddingRight": 16,
           "paddingTop": 13,
+          "top": 1,
         },
         Object {
           "height": 50,

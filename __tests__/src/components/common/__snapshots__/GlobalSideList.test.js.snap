@@ -58,6 +58,7 @@ exports[`GlobalSideListコンポーネントが正しく表示されること 1`
     tvParallaxProperties={undefined}
   >
     <View
+      last={true}
       onPress={undefined}
       style={
         Array [
@@ -67,10 +68,12 @@ exports[`GlobalSideListコンポーネントが正しく表示されること 1`
             "borderBottomWidth": 0.5,
             "borderColor": "#c9c9c9",
             "flexDirection": "row",
-            "marginLeft": 16,
+            "marginLeft": -15,
             "paddingBottom": 13,
+            "paddingLeft": 30,
             "paddingRight": 16,
             "paddingTop": 13,
+            "top": 1,
           },
           Object {
             "height": 50,
@@ -126,6 +129,7 @@ exports[`GlobalSideListコンポーネントが正しく表示されること 1`
     tvParallaxProperties={undefined}
   >
     <View
+      last={true}
       onPress={undefined}
       style={
         Array [
@@ -135,10 +139,12 @@ exports[`GlobalSideListコンポーネントが正しく表示されること 1`
             "borderBottomWidth": 0.5,
             "borderColor": "#c9c9c9",
             "flexDirection": "row",
-            "marginLeft": 16,
+            "marginLeft": -15,
             "paddingBottom": 13,
+            "paddingLeft": 30,
             "paddingRight": 16,
             "paddingTop": 13,
+            "top": 1,
           },
           Object {
             "height": 50,
@@ -194,6 +200,7 @@ exports[`GlobalSideListコンポーネントが正しく表示されること 1`
     tvParallaxProperties={undefined}
   >
     <View
+      last={true}
       onPress={undefined}
       style={
         Array [
@@ -203,10 +210,12 @@ exports[`GlobalSideListコンポーネントが正しく表示されること 1`
             "borderBottomWidth": 0.5,
             "borderColor": "#c9c9c9",
             "flexDirection": "row",
-            "marginLeft": 16,
+            "marginLeft": -15,
             "paddingBottom": 13,
+            "paddingLeft": 30,
             "paddingRight": 16,
             "paddingTop": 13,
+            "top": 1,
           },
           Object {
             "height": 50,
@@ -262,6 +271,7 @@ exports[`GlobalSideListコンポーネントが正しく表示されること 1`
     tvParallaxProperties={undefined}
   >
     <View
+      last={true}
       onPress={undefined}
       style={
         Array [
@@ -271,10 +281,12 @@ exports[`GlobalSideListコンポーネントが正しく表示されること 1`
             "borderBottomWidth": 0.5,
             "borderColor": "#c9c9c9",
             "flexDirection": "row",
-            "marginLeft": 16,
+            "marginLeft": -15,
             "paddingBottom": 13,
+            "paddingLeft": 30,
             "paddingRight": 16,
             "paddingTop": 13,
+            "top": 1,
           },
           Object {
             "height": 50,
@@ -330,6 +342,7 @@ exports[`GlobalSideListコンポーネントが正しく表示されること 1`
     tvParallaxProperties={undefined}
   >
     <View
+      last={true}
       onPress={undefined}
       style={
         Array [
@@ -339,10 +352,12 @@ exports[`GlobalSideListコンポーネントが正しく表示されること 1`
             "borderBottomWidth": 0.5,
             "borderColor": "#c9c9c9",
             "flexDirection": "row",
-            "marginLeft": 16,
+            "marginLeft": -15,
             "paddingBottom": 13,
+            "paddingLeft": 30,
             "paddingRight": 16,
             "paddingTop": 13,
+            "top": 1,
           },
           Object {
             "height": 50,
