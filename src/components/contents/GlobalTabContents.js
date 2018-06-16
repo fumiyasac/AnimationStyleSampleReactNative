@@ -29,6 +29,7 @@ import GlobalSideMenu from './GlobalSideMenu';
 // スクリーン表示用のコンポーネント
 import CommonScreenContainer from '../common/CommonScreenContainer';
 import FeedScreen from './screen/feed/FeedScreen';
+import NewsScreen from './screen/news/NewsScreen';
 import QuestionScreen from './screen/question/QuestionScreen';
 
 // タブ表示用の要素
@@ -66,6 +67,8 @@ export default class GlobalTabContents extends React.Component {
   // コンテンツを表示する
   _showContents = (index) => {
     switch (index) {
+      case 4:
+        return (<NewsScreen />);
       case 5:
         return (<QuestionScreen />);
       default:
@@ -145,7 +148,7 @@ export default class GlobalTabContents extends React.Component {
         captureGestures={true}
         tweenDuration={160}
         disabled={isDrawerDisabled}
-        openDrawerOffset={ (viewport) => { return 80; } }
+        openDrawerOffset={ () => { return 80; } }
         side={"left"}
         closedDrawerOffset={ () => { return 0; } }
         panOpenMask={0.04}

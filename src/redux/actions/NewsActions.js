@@ -8,22 +8,29 @@ import {
 	NEWS_FETCH_FAILURE
 } from './types';
 
-// ニュース情報取得開始時に実行されるメソッド
+//firebaseライブラリのインポート宣言
+import firebase from 'firebase';
+
+// 新着のお知らせ情報取得開始時に実行されるメソッド
 export const getAllNews = () => {
   return (dispatch) => {
     dispatch({ type: NEWS_FETCH });
 
 		// Reducerへ渡すオブジェクトを作成する
- 		// TODO: ...
+    firebase.database().ref(`/database/news`)
+      .once('value', snapshot => {
+        fetchNewsSuccess(dispatch, snapshot.toJSON())
+      })
+      .catch(() => fetchNewsFailure(dispatch));
   };
 };
 
-// ニュース情報取得成功時に実行されるメソッド
-const fetchFeedSuccess = (dispatch, news) => {
-  dispatch({ type: NEWS_FETCH_SUCCESS, payload: news });
+// 新着のお知らせ情報成功時に実行されるメソッド
+const fetchNewsSuccess = (dispatch, values) => {
+  dispatch({ type: NEWS_FETCH_SUCCESS, payload: values });
 };
 
-// ニュース情報取得失敗時に実行されるメソッド
-const fetchFeedFailure = (dispatch) => {
+// 新着のお知らせ情報失敗時に実行されるメソッド
+const fetchNewsFailure = (dispatch) => {
   dispatch({ type: NEWS_FETCH_FAILURE });
 };
