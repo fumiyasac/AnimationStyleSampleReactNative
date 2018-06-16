@@ -39,7 +39,7 @@ const styles = StyleSheet.create({
   title: {
     paddingTop: 6,
     fontSize: 14,
-    fontWeight: "bold"
+    fontWeight: 'bold'
   },
   comment: {
     paddingTop: 8,
