@@ -10,6 +10,7 @@ import {
   View,
   Text,
   Dimensions,
+  ImageBackground,
   StyleSheet
 } from 'react-native';
 
@@ -23,11 +24,11 @@ const containerHeaderHeight = 180;
 export default class GlobalSideHeader extends React.Component {
   render() {
     return (
-      <View style={styles.containerHeader}>
+      <ImageBackground source={require('../assets/side_menu.jpg')} style={styles.containerHeader}>
         <View style={styles.overlay}>
           <Text style={styles.overlayText}>勉強アプリboilerPlate</Text>
         </View>
-      </View>
+      </ImageBackground>
     );
   };
 }
