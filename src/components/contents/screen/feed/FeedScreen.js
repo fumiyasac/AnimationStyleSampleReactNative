@@ -28,9 +28,7 @@ export default class FeedScreen extends React.Component {
   render() {
     return (
       <FeedCard feed={feedSampleData.feed.contents[0]}
-        onPressLikeButton ={ () => { console.log("いいねボタン押下"); } }
-        onPressCommentButton ={ () => { console.log("コメントボタン押下"); } }
-        onPressReadModeButton ={ () => { console.log("詳細を読むボタン押下"); } }
+        onPressReadModeButton ={ () => { console.log("コメントを見るボタン押下"); } }
         />
     );
   };

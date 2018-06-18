@@ -37,8 +37,6 @@ let screenItems = [
   // タブと連動した部分
   { screen: "feed", title: "フィード", icon: "list" },
   { screen: "diary", title: "勉強日記", icon: "clipboard" },
-  { screen: "record", title: "達成記録", icon: "medal" },
-  { screen: "shopping", title: "お買い物", icon: "book" },
   // ドロワーと連動した部分
   { screen: "information", title: "新着のお知らせ" },
   { screen: "question", title: "よくある質問" },
@@ -47,7 +45,7 @@ let screenItems = [
 ];
 
 // タブまでのインデックス番号
-let TAB_CONTENT_INDEX_LIMIT = 3;
+let TAB_CONTENT_INDEX_LIMIT = 1;
 
 export default class GlobalTabContents extends React.Component {
 
@@ -67,9 +65,9 @@ export default class GlobalTabContents extends React.Component {
   // コンテンツを表示する
   _showContents = (index) => {
     switch (index) {
-      case 4:
+      case 2:
         return (<NewsScreen />);
-      case 5:
+      case 3:
         return (<QuestionScreen />);
       default:
         return (<FeedScreen />);
