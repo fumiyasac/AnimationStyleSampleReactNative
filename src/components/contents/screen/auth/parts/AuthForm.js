@@ -50,9 +50,16 @@ class AuthForm extends React.Component {
   // ログインボタン表示処理
   _renderLoginUserButton = () => {
     if (this.props.loading) {
-      return <AuthFormSubmittingButton buttonText={"既存ユーザー情報でログインする"} />;
+      return (
+        <AuthFormSubmittingButton 
+          buttonText={"既存ユーザー情報でログインする"} />
+      );
     } else {
-      return <AuthFormSubmitButton buttonText={"既存ユーザー情報でログインする"} onPressSubmitButton={ () => this._onPressLoginUserSubmitButton() } />;
+      return (
+        <AuthFormSubmitButton 
+          buttonText={"既存ユーザー情報でログインする"} 
+          onPressSubmitButton={ () => this._onPressLoginUserSubmitButton() } />
+        );
     }
   };
 
@@ -65,9 +72,16 @@ class AuthForm extends React.Component {
   // 新規登録ボタン表示処理
   _renderCreateUserButton = () => {
     if (this.props.loading) {
-      return <AuthFormSubmittingButton buttonText={"新規ユーザー情報を登録する"} />;
+      return (
+        <AuthFormSubmittingButton
+          buttonText={"新規ユーザー情報を登録する"} />
+      );
     } else {
-      return <AuthFormSubmitButton buttonText={"新規ユーザー情報を登録する"} onPressSubmitButton={ () => this._onPressCreateUserSubmitButton() } />;
+      return (
+        <AuthFormSubmitButton 
+          buttonText={"新規ユーザー情報を登録する"} 
+          onPressSubmitButton={ () => this._onPressCreateUserSubmitButton() } />
+        );
     }
   };
 
