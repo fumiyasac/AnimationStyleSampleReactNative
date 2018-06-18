@@ -97,7 +97,6 @@ export default class GlobalTabContents extends React.Component {
 
   // ヘッダーのメニューボタンを押下した際の処理
   _onPressMenuButton = () => {
-    // ドロワーメニューを開く
     this._drawer._root.open();
   };
 
@@ -109,17 +108,12 @@ export default class GlobalTabContents extends React.Component {
   // ドロワーメニュー経由でコンテンツを更新する際の処理
   _updateContentsFromDrawer = (index) => {
     this.setState({ selectedIndex: index });
-    // Debug.
-    console.log(this.state);
-    // ドロワーメニューを閉じる
     this._drawer._root.close();
   };
 
   // ドロワーの開閉状態を変更する際の処理
   _updateDrawerOpenState = (result) => {
     this.setState({ isDrawerOpen: result });
-    // Debug.
-    console.log(this.state);
   };
 
   render() {
