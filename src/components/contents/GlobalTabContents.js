@@ -53,7 +53,7 @@ export default class GlobalTabContents extends React.Component {
   constructor(props) {
     super(props);
 
-    // ステートの初期化を行う
+    // ステートの初期化を行う（ドロワーに関する設定と現在選択されている画面に関する設定）
     this.state = { isDrawerOpen: false, isDrawerDisabled: false, selectedIndex: 0 };
   };
 
