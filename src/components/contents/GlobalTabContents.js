@@ -29,6 +29,7 @@ import GlobalSideMenu from './GlobalSideMenu';
 // スクリーン表示用のコンポーネント
 import CommonScreenContainer from '../common/CommonScreenContainer';
 import FeedScreen from './screen/feed/FeedScreen';
+import RecordListScreen from './screen/recordList/RecordListScreen';
 import NewsScreen from './screen/news/NewsScreen';
 import QuestionScreen from './screen/question/QuestionScreen';
 
@@ -65,6 +66,8 @@ export default class GlobalTabContents extends React.Component {
   // コンテンツを表示する
   _showContents = (index) => {
     switch (index) {
+      case 1:
+        return (<RecordListScreen />);
       case 2:
         return (<NewsScreen />);
       case 3:
