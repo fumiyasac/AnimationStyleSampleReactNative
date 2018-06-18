@@ -45,12 +45,18 @@ class NewsList extends React.Component {
 
     // 最新のお知らせが取得中の場合における表示
     if (loading) {
-      return (<NewsListLoading />);
+      return (
+        <NewsListLoading />
+      );
     }
 
     // 最新のお知らせが取得失敗の場合における表示
     if (error !== '') {
-      return (<NewsListError error={error} onPressRetryButton={ () => this._onPressRetryButton() } />);
+      return (
+        <NewsListError 
+          error={error}
+          onPressRetryButton={ () => this._onPressRetryButton() } />
+      );
     }
 
     // 最新のお知らせ情報を配列に格納し直す

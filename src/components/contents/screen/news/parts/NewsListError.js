@@ -8,12 +8,12 @@ import React, { Component } from 'react';
 
 import {
   StyleSheet,
+  TouchableOpacity,
   View
 } from 'react-native';
 
 import {
-  Text,
-  Button
+  Text
 } from 'native-base';
 
 export default class NewsListError extends React.Component {
@@ -23,9 +23,9 @@ export default class NewsListError extends React.Component {
       <View style={styles.errorWrapper}>
         <Text style={styles.errorTitle}>{error}</Text>
         <View>
-          <Button style={styles.errorButton} onPress={onPressRetryButton}>
+          <TouchableOpacity onPress={onPressRetryButton}>
             <Text style={styles.errorButtonText}>再度データを取得する</Text>
-          </Button>
+          </TouchableOpacity>
         </View>
       </View>
     );
@@ -43,18 +43,15 @@ const styles = StyleSheet.create({
     marginTop: 20,
     fontSize: 13,
     textAlign: 'center',
-    color: '#666'
-  },
-  errorButton: {
-    marginTop: 12,
-    marginBottom: 20,
-    alignItems: 'center',
-    backgroundColor: '#4169e1'
+    color: '#ff0000'
   },
   errorButtonText: {
+    marginTop: 12,
     fontSize: 13,
+    marginBottom: 20,
     fontWeight: 'bold',
     textAlign: 'center',
-    color: '#fff'
+    color: '#666',
+    textDecorationLine: 'underline'
   }
 });
