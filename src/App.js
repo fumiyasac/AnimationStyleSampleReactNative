@@ -40,6 +40,7 @@ import {
 import TutorialContents from './components/contents/TutorialContents';
 import AuthContents from './components/contents/AuthContents';
 import GlobalTabContents from './components/contents/GlobalTabContents';
+import RecordRequestContents from './components/contents/RecordRequestContents';
 import SettingContents from './components/contents/SettingContents';
 import WebViewContents from './components/contents/WebViewContents';
 
@@ -72,6 +73,7 @@ export default class App extends React.Component {
             </Scene>
             <Scene key="main">
               <Scene key="GlobalTabContents" initial={true} component={GlobalTabContents} hideNavBar={true} />
+              <Scene key="RecordRequestContents" component={RecordRequestContents} hideNavBar={true} />
               <Scene key="SettingContents" component={SettingContents} hideNavBar={true} />
               <Scene key="WebViewContents" component={WebViewContents} hideNavBar={true} />
             </Scene>

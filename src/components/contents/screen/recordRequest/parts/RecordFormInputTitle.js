@@ -17,17 +17,16 @@ import {
   Label
 } from 'native-base';
 
-export default class AuthFormInputPassword extends React.Component {
+export default class AuthFormInputTitle extends React.Component {
   render() {
     const { value, onChangeText } = this.props;
     return (
       <Item stackedLabel last>
-        <Label style={styles.title}>パスワード:</Label>
+        <Label style={styles.title}>タイトル:</Label>
         <Input
           style={styles.input}
           value={value}
-          secureTextEntry
-          placeholder="例）●●●●●●●●"
+          placeholder="例）今日も無事に乗り切ることができたぞ！"
           onChangeText={onChangeText}
         />
       </Item>

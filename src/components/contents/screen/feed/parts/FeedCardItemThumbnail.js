@@ -24,10 +24,9 @@ const imageAreaHeight = DEVICE_WIDTH * 0.6;
 
 export default class FeedCardItemThumbnail extends React.Component {
   render() {
-    const { image_url } = this.props;
     return (
       <CardItem style={styles.cardImageWrapper} cardBody>
-        <Image style={styles.cardImage} source={ { uri: image_url } } />
+        <Image style={styles.cardImage} source={require('../assets/feed_sample.jpg')} />
       </CardItem>
     );
   };

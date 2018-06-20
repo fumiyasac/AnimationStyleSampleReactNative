@@ -10,9 +10,13 @@ import { combineReducers } from 'redux';
 import AuthReducer from './AuthReducer';
 import NewsReducer from './NewsReducer';
 import FeedReducer from './FeedReducer';
+import RecordReducer from './RecordReducer';
+import RecordFormReducer from './RecordFormReducer';
 
 export default combineReducers({
   auth: AuthReducer,
   feed: FeedReducer,
-  news: NewsReducer
+  news: NewsReducer,
+  records: RecordReducer,
+  recordForm: RecordFormReducer
 });

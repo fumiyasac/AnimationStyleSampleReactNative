@@ -45,6 +45,7 @@ const styles = StyleSheet.create({
   category: {
     marginTop: 8,
     marginBottom: 4,
-    fontSize: 12
+    fontSize: 12,
+    fontWeight: "bold"
   },
 });

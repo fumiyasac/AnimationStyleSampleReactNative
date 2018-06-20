@@ -20,18 +20,16 @@ import {
 
 export default class RecordListItem extends React.Component {
   render() {
+    const { title, content, onPressRequestButton } = this.props;
     return (
       <ListItem>
         <Body>
-          <Text style={styles.listItemGenre} note>日々の勉強</Text>
-          <Text style={styles.listItemTitle}>ああああああああああああああああああああああああああああああああああああああああ</Text>
-          <Text style={styles.listItemDetail} note>本当に短いデータでも大丈夫です。まずは今日取り組んだことを簡単な日報のように登録してみてください。</Text>
+          <Text style={styles.listItemMark} note>サンプルデータ:</Text>
+          <Text style={styles.listItemTitle}>{title}</Text>
+          <Text style={styles.listItemContent} note>{content}</Text>
           <View style={styles.listItemLinkArea}>
-            <TouchableOpacity>
-              <Text style={styles.listItemLink} note>編集する</Text>
-            </TouchableOpacity>
-            <TouchableOpacity>
-              <Text style={styles.listItemLink} note>削除する</Text>
+            <TouchableOpacity onPress={onPressRequestButton}>
+              <Text style={styles.listItemLink} note>編集または削除する</Text>
             </TouchableOpacity>
           </View>
         </Body>
@@ -41,7 +39,7 @@ export default class RecordListItem extends React.Component {
 }
 
 const styles = StyleSheet.create({
-  listItemGenre: {
+  listItemMark: {
     paddingTop: 6,
     paddingBottom: 6,
     fontSize: 14,
@@ -55,7 +53,7 @@ const styles = StyleSheet.create({
     fontWeight: 'normal',
     color: '#333'
   },
-  listItemDetail: {
+  listItemContent: {
     marginTop: 12,
     lineHeight: 18,
     fontSize: 13,
@@ -68,7 +66,7 @@ const styles = StyleSheet.create({
     flexWrap: 'wrap',
     marginBottom: 10,
   },
-  listItemLinkText: {
+  listItemLink: {
     lineHeight: 18,
     fontSize: 13,
     fontWeight: 'bold',

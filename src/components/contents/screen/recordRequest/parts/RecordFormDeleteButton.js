@@ -18,13 +18,12 @@ import {
 
 export default class RecordListError extends React.Component {
   render() {
-    const { error, onPressRetryButton } = this.props;
+    const { onPressDeleteRecordButton } = this.props;
     return (
-      <View style={styles.errorWrapper}>
-        <Text style={styles.errorTitle}>{error}</Text>
+      <View style={styles.wrapper}>
         <View>
-          <TouchableOpacity onPress={onPressRetryButton}>
-            <Text style={styles.errorButtonText}>再度データを取得する</Text>
+          <TouchableOpacity onPress={onPressDeleteRecordButton}>
+            <Text style={styles.buttonText}>このデータを削除する</Text>
           </TouchableOpacity>
         </View>
       </View>
@@ -33,20 +32,11 @@ export default class RecordListError extends React.Component {
 }
 
 const styles = StyleSheet.create({
-  errorWrapper: {
-    flex: 1,
-    backgroundColor: '#fff',
-    justifyContent: 'center',
-    alignItems: 'center'
+  wrapper: {
+    backgroundColor: '#fff'
   },
-  errorTitle: {
+  buttonText: {
     marginTop: 20,
-    fontSize: 13,
-    textAlign: 'center',
-    color: '#ff0000'
-  },
-  errorButtonText: {
-    marginTop: 12,
     fontSize: 13,
     marginBottom: 20,
     fontWeight: 'bold',

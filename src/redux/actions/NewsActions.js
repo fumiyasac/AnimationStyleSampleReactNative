@@ -8,7 +8,7 @@ import {
 	NEWS_FETCH_FAILURE
 } from './types';
 
-//firebaseライブラリのインポート宣言
+// firebaseライブラリのインポート宣言
 import firebase from 'firebase';
 
 // 新着のお知らせ情報取得開始時に実行されるメソッド

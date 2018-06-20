@@ -25,6 +25,7 @@ export default class AuthFormInputMail extends React.Component {
         <Label style={styles.title}>メールアドレス:</Label>
         <Input
           style={styles.input}
+          value={value}
           placeholder="例）username@example.com"
           onChangeText={onChangeText}
         />

@@ -8,13 +8,20 @@ import {
 	FEED_FETCH_FAILURE
 } from './types';
 
+// firebaseライブラリのインポート宣言
+import firebase from 'firebase';
+
 // フィード情報取得開始時に実行されるメソッド
 export const getAllFeed = () => {
   return (dispatch) => {
     dispatch({ type: FEED_FETCH });
 
 		// Reducerへ渡すオブジェクトを作成する
- 		// TODO: ...
+    firebase.database().ref(`/database/feed`)
+      .once('value', snapshot => {
+        fetchFeedSuccess(dispatch, snapshot.toJSON())
+      })
+      .catch(() => fetchFeedFailure(dispatch));
   };
 };
 

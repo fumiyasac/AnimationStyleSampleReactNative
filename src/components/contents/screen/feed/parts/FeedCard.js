@@ -20,12 +20,12 @@ import FeedCardItemFooter from './FeedCardItemFooter';
 export default class FeedCard extends React.Component {
   render() {
     const { feed } = this.props;
-    const { title, subtitle, category, detail, image_url, created } = feed;
+    const { title, subtitle, category, detail, created } = feed;
     return (
       <Content>
         <Card>
           <FeedCardItemHeader title={title} subtitle={subtitle} category={category} />
-          <FeedCardItemThumbnail image_url={image_url} />
+          <FeedCardItemThumbnail />
           <FeedCardItemDetail detail={detail} />
           <FeedCardItemFooter createdDate={created} />
         </Card>
