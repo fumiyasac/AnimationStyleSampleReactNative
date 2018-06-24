@@ -1,7 +1,10 @@
 /**
  * reducers/RecordReducer.js
+ * 記録データ情報の取得状態を管理するためのReducer
+ * → 定義されたAction経由で実行されるState(records)に関する処理に関するロジックを定義する
  */
 
+// 記録データ情報のAction定義のインポート宣言
 import { 
   RECORD_FETCH,
   RECORD_FETCH_SUCCESS
@@ -9,6 +12,8 @@ import {
 
 // 初期状態のステート定義（オブジェクトの形にする）
 const initialState = { recordList: null, loading: false };;
+
+// MARK: - Functions
 
 // 選択されたケースを元にstateの更新を行うメソッド
 export default (state = initialState, action) => {

@@ -20,6 +20,9 @@ import {
 } from 'native-base';
 
 export default class SettingListIntro extends React.Component {
+
+  // MARK: - Rendering Components
+
   render() {
     return (
       <ListItem avatar noBorder>
@@ -34,6 +37,8 @@ export default class SettingListIntro extends React.Component {
     );
   };
 }
+
+// MARK: - Component Styles
 
 const styles = StyleSheet.create({
   title: {

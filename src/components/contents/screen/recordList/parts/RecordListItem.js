@@ -19,6 +19,9 @@ import {
 } from 'native-base';
 
 export default class RecordListItem extends React.Component {
+
+  // MARK: - Rendering Components
+
   render() {
     const { title, content, onPressRequestButton } = this.props;
     return (
@@ -37,6 +40,8 @@ export default class RecordListItem extends React.Component {
     );
   };
 }
+
+// MARK: - Component Styles
 
 const styles = StyleSheet.create({
   listItemMark: {

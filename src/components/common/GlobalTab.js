@@ -18,6 +18,9 @@ import {
 } from 'native-base';
 
 export default class GlobalTab extends React.Component {
+
+  // MARK: - Rendering Components
+
   render() {
     const { selected, icon, title } = this.props;
     let deviceStyle = (Platform.OS === "ios") ? iosStyles : androidStyles;
@@ -29,6 +32,8 @@ export default class GlobalTab extends React.Component {
     );
   };
 }
+
+// MARK: - Component Styles
 
 const iosStyles = StyleSheet.create({
   tabDefaultColor: {

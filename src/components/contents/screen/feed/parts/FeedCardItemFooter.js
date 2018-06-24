@@ -7,19 +7,19 @@
 import React, { Component } from 'react';
 
 import {
-  View,
-  StyleSheet,
-  TouchableOpacity
+  StyleSheet
 } from 'react-native';
 
 import { 
   CardItem,
   Left,
-  Right,
   Text
 } from 'native-base';
 
 export default class FeedCardItemHeader extends React.Component {
+
+  // MARK: - Rendering Components
+
   render() {
     const { createdDate } = this.props;
     return (
@@ -31,6 +31,8 @@ export default class FeedCardItemHeader extends React.Component {
     );
   };
 }
+
+// MARK: - Component Styles
 
 const styles = StyleSheet.create({
   cardFooter: {

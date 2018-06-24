@@ -14,14 +14,16 @@ import {
   Container
 } from 'native-base';
 
-// 認証コンテンツ用の共通コンポーネント
+// チュートリアルのコンテンツ表示用の共通コンポーネント
 import AuthHeader from '../common/AuthHeader';
 
-// スクリーン表示用のコンポーネント
-import CommonScreenContainer from '../common/CommonScreenContainer';
+// チュートリアルのスクリーン表示用のコンポーネント
 import TutorialScreen from './screen/tutorial/TutorialScreen';
 
 export default class TutorialContents extends React.Component {
+
+  // MARK: - Rendering Components
+
   render() {
     return (
       <Container style={styles.container}>
@@ -31,6 +33,8 @@ export default class TutorialContents extends React.Component {
     );
   };
 }
+
+// MARK: - Component Styles
 
 const styles = StyleSheet.create({
   container: {

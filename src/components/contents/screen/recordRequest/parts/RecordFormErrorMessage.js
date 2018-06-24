@@ -17,6 +17,9 @@ import {
 } from 'native-base';
 
 export default class RecordFormErrorMessage extends React.Component {
+
+  // MARK: - Rendering Components
+
   render() {
     const { errorMessage } = this.props;
     return (
@@ -26,6 +29,8 @@ export default class RecordFormErrorMessage extends React.Component {
     );
   };
 }
+
+// MARK: - Component Styles
 
 const styles = StyleSheet.create({
   message: {

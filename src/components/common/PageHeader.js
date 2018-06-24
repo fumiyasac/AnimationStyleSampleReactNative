@@ -21,6 +21,9 @@ import {
 } from 'native-base';
 
 export default class PageHeader extends React.Component {
+
+  // MARK: - Rendering Components
+
   render() {
     const { title, onPressBackButton } = this.props;
     return (
@@ -38,6 +41,8 @@ export default class PageHeader extends React.Component {
     );
   };
 }
+
+// MARK: - Component Styles
 
 const styles = StyleSheet.create({
   headerBackgroundColor: {

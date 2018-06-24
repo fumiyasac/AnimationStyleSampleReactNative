@@ -1,7 +1,10 @@
 /**
  * reducers/FeedReducer.js
+ * フィード情報の取得状態を管理するためのReducer
+ * → 定義されたAction経由で実行されるState(feed)に関する処理に関するロジックを定義する
  */
 
+// フィード情報関連のAction定義のインポート宣言
 import {
   FEED_FETCH,
   FEED_FETCH_SUCCESS,
@@ -10,6 +13,8 @@ import {
 
 // 初期状態のステート定義（オブジェクトの形にする）
 const initialState = { feedList: null, error: '', loading: false };
+
+// MARK: - Functions
 
 // 選択されたケースを元にstateの更新を行うメソッド
 export default (state = initialState, action) => {

@@ -12,14 +12,15 @@ import {
 } from 'react-native';
 
 import {
-  Left,
   Body,
   ListItem,
-  Thumbnail,
   Text
 } from 'native-base';
 
 export default class RecordListIntro extends React.Component {
+
+  // MARK: - Rendering Components
+
   render() {
     return (
       <ListItem>
@@ -31,6 +32,8 @@ export default class RecordListIntro extends React.Component {
     );
   };
 }
+
+// MARK: - Component Styles
 
 const styles = StyleSheet.create({
   title: {

@@ -18,6 +18,9 @@ import {
 } from 'native-base';
 
 export default class AuthFormInputContent extends React.Component {
+
+  // MARK: - Rendering Components
+
   render() {
     const { value, onChangeText } = this.props;
     return (
@@ -35,6 +38,8 @@ export default class AuthFormInputContent extends React.Component {
     );
   };
 }
+
+// MARK: - Component Styles
 
 const styles = StyleSheet.create({
   wrapper: {

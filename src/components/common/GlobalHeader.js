@@ -21,6 +21,9 @@ import {
 } from 'native-base';
 
 export default class GlobalHeader extends React.Component {
+
+  // MARK: - Rendering Components
+
   render() {
     const { title, onPressMenuButton, onPressSettingButton } = this.props;
     return (
@@ -42,6 +45,8 @@ export default class GlobalHeader extends React.Component {
     );
   };
 }
+
+// MARK: - Component Styles
 
 const styles = StyleSheet.create({
   headerBackgroundColor: {

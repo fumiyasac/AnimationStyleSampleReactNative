@@ -36,7 +36,7 @@ import {
   MESSAGING_SENDER_ID 
 } from './config';
 
-// 自作コンポーネント
+// 各画面表示用のそれぞれのコンポーネント
 import TutorialContents from './components/contents/TutorialContents';
 import AuthContents from './components/contents/AuthContents';
 import GlobalTabContents from './components/contents/GlobalTabContents';
@@ -45,8 +45,12 @@ import SettingContents from './components/contents/SettingContents';
 import WebViewContents from './components/contents/WebViewContents';
 
 export default class App extends React.Component {
+
+  // MARK: - Component Life Cycles
+
   // コンポーネントの内容がMountされる前に行う処理
   componentWillMount() {
+
     // firebaseのセッティング情報を記載する
     // ※API情報に関してFirebaseコンソールを取得 → Authentication → 「ログイン方法」でメール/パスワードを有効にする
     const config = {
@@ -56,11 +60,15 @@ export default class App extends React.Component {
       storageBucket: STORAGE_BUCKET,
       messagingSenderId: MESSAGING_SENDER_ID
     };
+
     // firebaseを有効にする
     firebase.initializeApp(config);
   }
 
+  // MARK: - Rendering Components
+
   render() {
+
     // Redux本来のdispatch処理が実行される前にMiddlewareの処理を実行する
     const store = createStore(reducers, {}, applyMiddleware(ReduxThunk, logger));
     return (

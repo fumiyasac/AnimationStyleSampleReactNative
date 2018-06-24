@@ -6,10 +6,13 @@
 
 import React, { Component } from 'react';
 
-// 設定コンテンツ用の共通コンポーネント
+// 認証コンテンツの内容を表示するためのコンポーネント
 import AuthForm from './parts/AuthForm';
 
 export default class AuthScreen extends React.Component {
+
+  // MARK: - Rendering Components
+
   render() {
     return (
       <AuthForm />

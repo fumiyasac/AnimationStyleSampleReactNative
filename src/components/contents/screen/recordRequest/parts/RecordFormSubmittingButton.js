@@ -18,6 +18,9 @@ import {
 } from 'native-base';
 
 export default class RecordFormSubmittingButton extends React.Component {
+
+  // MARK: - Rendering Components
+
   render() {
     const { buttonText } = this.props;
     return (
@@ -29,6 +32,8 @@ export default class RecordFormSubmittingButton extends React.Component {
     );
   };
 }
+
+// MARK: - Component Styles
 
 const styles = StyleSheet.create({
   submitButtonView: {

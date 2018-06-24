@@ -16,6 +16,9 @@ import {
 } from 'native-base';
 
 export default class GlobalSideList extends React.Component {
+
+  // MARK: - Rendering Components
+
   render() {
     const { headerTitle, listItems } = this.props;
     return (

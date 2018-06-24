@@ -33,10 +33,14 @@ import RecordListItem from './RecordListItem';
 
 class RecordList extends React.Component {
 
+  // MARK: - Component Life Cycles
+
   // コンポーネントの内容がMountされる前に行う処理
   componentWillMount() {
     this.props.getAllRecords();
   }
+
+  // MARK: - Functions
 
   // 再度取得する処理
   _onPressRetryButton = () => {
@@ -79,6 +83,7 @@ class RecordList extends React.Component {
       recordItems.push(recordList[uid]);
     }
 
+    // 記録データのリストを生成して表示する
     return recordItems.map( (item, index) => {
       return (
         <RecordListItem 
@@ -89,6 +94,8 @@ class RecordList extends React.Component {
       );
     });
   };
+
+  // MARK: - Rendering Components
 
   render() {
     return (
@@ -103,6 +110,8 @@ class RecordList extends React.Component {
     );
   };
 }
+
+// MARK: - Component Styles
 
 const styles = StyleSheet.create({
   container: {

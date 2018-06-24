@@ -17,6 +17,9 @@ import {
 } from 'native-base';
 
 export default class NewsListError extends React.Component {
+
+  // MARK: - Rendering Components
+
   render() {
     const { error, onPressRetryButton } = this.props;
     return (
@@ -31,6 +34,8 @@ export default class NewsListError extends React.Component {
     );
   };
 }
+
+// MARK: - Component Styles
 
 const styles = StyleSheet.create({
   errorWrapper: {

@@ -16,13 +16,16 @@ import {
   CardItem
 } from 'native-base';
 
+// 高さをデバイスから取得する
 const {
   width: DEVICE_WIDTH
 } = Dimensions.get('window');
-
 const imageAreaHeight = DEVICE_WIDTH * 0.6;
 
 export default class FeedCardItemThumbnail extends React.Component {
+
+  // MARK: - Rendering Components
+
   render() {
     return (
       <CardItem style={styles.cardImageWrapper} cardBody>
@@ -31,6 +34,8 @@ export default class FeedCardItemThumbnail extends React.Component {
     );
   };
 }
+
+// MARK: - Component Styles
 
 const styles = StyleSheet.create({
   cardImageWrapper: {

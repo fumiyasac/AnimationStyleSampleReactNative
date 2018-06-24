@@ -8,7 +8,6 @@ import React, { Component } from 'react';
 
 import {
   StyleSheet,
-  TouchableOpacity,
   View
 } from 'react-native';
 
@@ -17,6 +16,9 @@ import {
 } from 'native-base';
 
 export default class RecordListNone extends React.Component {
+
+  // MARK: - Rendering Components
+
   render() {
     return (
       <View style={styles.noneWrapper}>
@@ -28,6 +30,8 @@ export default class RecordListNone extends React.Component {
     );
   };
 }
+
+// MARK: - Component Styles
 
 const styles = StyleSheet.create({
   noneWrapper: {

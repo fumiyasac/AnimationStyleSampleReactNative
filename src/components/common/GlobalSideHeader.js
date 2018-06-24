@@ -14,14 +14,17 @@ import {
   StyleSheet
 } from 'react-native';
 
+// 幅と高さをデバイスから取得する
 const {
   width: DEVICE_WIDTH,
 } = Dimensions.get('window');
-
 const containerHeaderWidth = DEVICE_WIDTH - 80;
 const containerHeaderHeight = 180;
 
 export default class GlobalSideHeader extends React.Component {
+
+  // MARK: - Rendering Components
+
   render() {
     return (
       <ImageBackground source={require('../assets/side_menu.jpg')} style={styles.containerHeader}>
@@ -32,6 +35,8 @@ export default class GlobalSideHeader extends React.Component {
     );
   };
 }
+
+// MARK: - Component Styles
 
 const styles = StyleSheet.create({
   containerHeader: {

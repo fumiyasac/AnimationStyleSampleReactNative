@@ -30,15 +30,21 @@ import NewsListError from './NewsListError';
 
 class NewsList extends React.Component {
 
+  // MARK: - Component Life Cycles
+
   // コンポーネントの内容がMountされる前に行う処理
   componentWillMount() {
     this.props.getAllNews();
   }
 
+  // MARK: - Functions
+
   // 再度取得する処理
   _onPressRetryButton = () => {
     this.props.getAllNews();
   };
+
+  // MARK: - Rendering Components
 
   render() {
     const { newsList, error, loading } = this.props;
@@ -75,6 +81,8 @@ class NewsList extends React.Component {
     );
   };
 }
+
+// MARK: - Component Styles
 
 const styles = StyleSheet.create({
   container: {

@@ -18,6 +18,9 @@ import {
 } from 'native-base';
 
 export default class AuthFormInputTitle extends React.Component {
+
+  // MARK: - Rendering Components
+
   render() {
     const { value, onChangeText } = this.props;
     return (
@@ -33,6 +36,8 @@ export default class AuthFormInputTitle extends React.Component {
     );
   };
 }
+
+// MARK: - Component Styles
 
 const styles = StyleSheet.create({
   title: {

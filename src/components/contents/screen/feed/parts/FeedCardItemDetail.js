@@ -16,6 +16,9 @@ import {
 } from 'native-base';
 
 export default class FeedCardItemDetail extends React.Component {
+
+  // MARK: - Functions
+
   render() {
     const { detail } = this.props;
     return (
@@ -25,6 +28,8 @@ export default class FeedCardItemDetail extends React.Component {
     );
   };
 }
+
+// MARK: - Component Styles
 
 const styles = StyleSheet.create({
   detail: {

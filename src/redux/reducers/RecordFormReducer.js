@@ -1,23 +1,27 @@
 /**
  * reducers/RecordFormReducer.js
+ * 記録データのフォーム処理(追加・変更・削除)時の取得状態を管理するためのReducer
+ * → 定義されたAction経由で実行されるState(recordForm)に関する処理に関するロジックを定義する
  */
 
 // 記録変更関連のアクションタイプ定義のインポート宣言
 import { 
-  RECORD_REFRESH,
   RECORD_UID_CHANGED,
   RECORD_TITLE_CHANGED,
   RECORD_CONTENT_CHANGED,
-  RECORD_REQUEST_INVALID,
   RECORD_REQUEST_CREATE,
   RECORD_REQUEST_UPDATE,
   RECORD_REQUEST_DELETE,
   RECORD_REQUEST_SUCCESS,
+  RECORD_REFRESH,
+  RECORD_REQUEST_INVALID,
   RECORD_REQUEST_FAILURE,
 } from '../actions/types';
 
 // 初期状態のステート定義（オブジェクトの形にする）
 const initialState = { uid: null, title: '', content: '', error: '', loading: false };
+
+// MARK: - Functions
 
 // 選択されたケースを元にstateの更新を行うメソッド（アクションのタイプに応じての場合分けがされている）
 export default (state = initialState, action) => {

@@ -35,12 +35,15 @@ import QuestionScreen from './screen/question/QuestionScreen';
 
 // タブ表示用の要素
 let screenItems = [
+
   // タブと連動した部分
   { screen: "feed", title: "フィード", icon: "list" },
   { screen: "diary", title: "勉強日記", icon: "clipboard" },
+
   // ドロワーと連動した部分
   { screen: "information", title: "新着のお知らせ" },
   { screen: "question", title: "よくある質問" },
+
   // グローバルメニューと連動した部分
   { screen: "setting", title: "設定" }
 ];
@@ -50,6 +53,8 @@ let TAB_CONTENT_INDEX_LIMIT = 1;
 
 export default class GlobalTabContents extends React.Component {
 
+  // MARK: - Component Life Cycles
+
   // コンストラクタ
   constructor(props) {
     super(props);
@@ -57,6 +62,8 @@ export default class GlobalTabContents extends React.Component {
     // ステートの初期化を行う（ドロワーに関する設定と現在選択されている画面に関する設定）
     this.state = { isDrawerOpen: false, isDrawerDisabled: false, selectedIndex: 0 };
   };
+
+  // MARK: - Functions
 
   // タイトルを表示する
   _showTitle = (index) => {
@@ -119,6 +126,8 @@ export default class GlobalTabContents extends React.Component {
     this.setState({ isDrawerOpen: result });
   };
 
+  // MARK: - Rendering Components
+
   render() {
     const { selectedIndex, isDrawerDisabled } = this.state;
     /**
@@ -126,7 +135,7 @@ export default class GlobalTabContents extends React.Component {
      * NativeBaseのDrawerは下記のライブラリを拡張して作られている
      * (各種プロパティの参考) React Native Drawer
      * https://github.com/root-two/react-native-drawer#props
-    */
+     */
     return (
       <Drawer
         ref={ (ref) => { this._drawer = ref; } }
@@ -162,6 +171,8 @@ export default class GlobalTabContents extends React.Component {
     );
   };
 }
+
+// MARK: - Component Styles
 
 const styles = StyleSheet.create({
   container: {

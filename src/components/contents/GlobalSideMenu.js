@@ -15,11 +15,12 @@ import {
   Content
 } from 'native-base';
 
-// グローバルコンテンツ用の共通コンポーネント
+// ドロワーコンテンツ用の共通コンポーネント
 import GlobalSideHeader from '../common/GlobalSideHeader';
 import GlobalSideList from '../common/GlobalSideList';
 import GlobalSideListItem from '../common/GlobalSideListItem';
 
+// サイドメニュー用の表示要素(1)
 let drawerMainItems = {
   "headerTitle": "メニュー",
   "items": [
@@ -27,6 +28,7 @@ let drawerMainItems = {
   ]
 };
 
+// サイドメニュー用の表示要素(2)
 let drawerSubItems = {
   "headerTitle": "その他コンテンツ",
   "items": [
@@ -35,6 +37,8 @@ let drawerSubItems = {
 };
 
 export default class GlobalSideMenu extends React.Component {
+
+  // MARK: - Functions
 
   // メニューのリスト一覧を表示する
   _showDrawerMainItems = () => {
@@ -62,6 +66,8 @@ export default class GlobalSideMenu extends React.Component {
     });
   };
 
+  // MARK: - Rendering Components
+
   render() {
     return (
       <Container style={styles.container}>
@@ -74,6 +80,8 @@ export default class GlobalSideMenu extends React.Component {
     );
   };
 }
+
+// MARK: - Component Styles
 
 const styles = StyleSheet.create({
   container: {

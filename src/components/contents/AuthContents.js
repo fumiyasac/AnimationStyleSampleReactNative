@@ -14,14 +14,17 @@ import {
   Container
 } from 'native-base';
 
-// 認証コンテンツ用の共通コンポーネント
+// 認証のコンテンツ表示用の共通コンポーネント
 import AuthHeader from '../common/AuthHeader';
 
-// スクリーン表示用のコンポーネント
+// 認証のスクリーン表示用のコンポーネント
 import CommonScreenContainer from '../common/CommonScreenContainer';
 import AuthScreen from './screen/auth/AuthScreen';
 
 export default class AuthContents extends React.Component {
+
+  // MARK: - Rendering Components
+
   render() {
     return (
       <Container style={styles.container}>
@@ -31,6 +34,8 @@ export default class AuthContents extends React.Component {
     );
   };
 }
+
+// MARK: - Component Styles
 
 const styles = StyleSheet.create({
   container: {

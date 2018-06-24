@@ -12,13 +12,14 @@ import {
 
 import {
   Header,
-  Left,
-  Right,
   Body,
   Title
 } from 'native-base';
 
 export default class AuthHeader extends React.Component {
+
+  // MARK: - Rendering Components
+
   render() {
     const { title } = this.props;
     return (
@@ -30,6 +31,8 @@ export default class AuthHeader extends React.Component {
     );
   };
 }
+
+// MARK: - Component Styles
 
 const styles = StyleSheet.create({
   headerBackgroundColor: {

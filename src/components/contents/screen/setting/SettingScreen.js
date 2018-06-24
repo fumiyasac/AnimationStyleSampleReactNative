@@ -24,6 +24,9 @@ let settingItems = {
 };
 
 export default class SettingScreen extends React.Component {
+
+  // MARK: - Rendering Components
+
   render() {
     return (
       <SettingList settingItems={settingItems} />

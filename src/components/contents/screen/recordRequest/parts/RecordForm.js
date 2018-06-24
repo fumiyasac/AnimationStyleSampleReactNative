@@ -22,7 +22,7 @@ import {
   deleteRecord
 } from '../../../../../redux/actions';
 
-// 認証コンテンツ用の共通コンポーネント
+// 記録データ表示コンテンツ用の共通コンポーネント
 import RecordFormIntro from './RecordFormIntro';
 import RecordFormInputTitle from './RecordFormInputTitle';
 import RecordFormInputContent from './RecordFormInputContent';
@@ -32,6 +32,8 @@ import RecordFormSubmittingButton from './RecordFormSubmittingButton';
 import RecordFormDeleteButton from './RecordFormDeleteButton';
 
 class RecordForm extends React.Component {
+
+  // MARK: - Functions
 
   // タイトルの入力値変更時の処理
   _onTitleChange = (text) => {
@@ -53,13 +55,13 @@ class RecordForm extends React.Component {
     }
   };
 
-  // 
+  // 削除ボタン押下時の処理
   _onPressDeleteRecordButton = () => {
     const { uid } = this.props;
     this.props.deleteRecord({ uid });
   };
 
-  // 編集ボタン表示処理
+  // 状態に応じた編集ボタン表示処理
   _renderRequestRecordButton = () => {
     if (this.props.loading) {
       return (
@@ -75,7 +77,7 @@ class RecordForm extends React.Component {
     }
   };
 
-  //
+  // 状態に応じた削除ボタン表示処理
   _renderDeleteRecordButton = () => {
     if (this.props.uid) {
       return (
@@ -84,6 +86,8 @@ class RecordForm extends React.Component {
       );
     } 
   };
+
+  // MARK: - Rendering Components
 
   render() {
     return (

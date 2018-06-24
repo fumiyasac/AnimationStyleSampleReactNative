@@ -17,6 +17,9 @@ import {
 } from 'native-base';
 
 export default class FeedCardItemHeader extends React.Component {
+
+  // MARK: - Rendering Components
+
   render() {
     const { title, subtitle, category } = this.props;
     return (
@@ -30,6 +33,8 @@ export default class FeedCardItemHeader extends React.Component {
     );
   };
 }
+
+// MARK: - Component Styles
 
 const styles = StyleSheet.create({
   title: {

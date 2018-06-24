@@ -17,6 +17,9 @@ import {
 } from 'native-base';
 
 export default class FeedLoading extends React.Component {
+
+  // MARK: - Rendering Components
+
   render() {
     return (
       <View style={styles.loadingWrapper}>
@@ -26,6 +29,8 @@ export default class FeedLoading extends React.Component {
     );
   };
 }
+
+// MARK: - Component Styles
 
 const styles = StyleSheet.create({
   loadingWrapper: {

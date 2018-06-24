@@ -23,10 +23,14 @@ import PageHeader from '../common/PageHeader';
 
 export default class WebViewContents extends React.Component {
 
+  // MARK: - Functions
+
   // ヘッダーの戻るボタンを押下した際の処理
   _onPressBackButton = () => {
     Actions.pop();
   };
+
+  // MARK: - Rendering Components
 
   render() {
     // MEMO: この部分はWebページを表示するだけなので、RNRFからのパラメータを受け取ってURLを表示するような形にする
@@ -39,6 +43,8 @@ export default class WebViewContents extends React.Component {
     );
   };
 }
+
+// MARK: - Component Styles
 
 const styles = StyleSheet.create({
   container: {

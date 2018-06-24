@@ -31,6 +31,8 @@ import AuthFormSubmittingButton from './AuthFormSubmittingButton';
 
 class AuthForm extends React.Component {
 
+  // MARK: - Functions
+
   // メールアドレスの入力値変更時の処理
   _onMailChange = (text) => {
     this.props.mailChanged(text);
@@ -84,6 +86,8 @@ class AuthForm extends React.Component {
         );
     }
   };
+
+  // MARK: - Rendering Components
 
   render() {
     return (

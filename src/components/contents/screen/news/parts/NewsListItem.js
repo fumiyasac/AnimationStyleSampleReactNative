@@ -18,6 +18,9 @@ import {
 } from 'native-base';
 
 export default class NewsListItem extends React.Component {
+
+  // MARK: - Rendering Components
+
   render() {
     const { item } = this.props;
     return (
@@ -31,6 +34,8 @@ export default class NewsListItem extends React.Component {
     );
   };
 }
+
+// MARK: - Component Styles
 
 const styles = StyleSheet.create({
   titleText: {

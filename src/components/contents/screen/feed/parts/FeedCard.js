@@ -18,6 +18,9 @@ import FeedCardItemDetail from './FeedCardItemDetail';
 import FeedCardItemFooter from './FeedCardItemFooter';
 
 export default class FeedCard extends React.Component {
+
+  // MARK: - Functions
+
   render() {
     const { feed } = this.props;
     const { title, subtitle, category, detail, created } = feed;

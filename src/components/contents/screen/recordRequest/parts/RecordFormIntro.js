@@ -17,6 +17,9 @@ import {
 } from 'native-base';
 
 export default class RecordFormIntro extends React.Component {
+
+  // MARK: - Rendering Components
+
   render() {
     return (
       <View>
@@ -26,6 +29,8 @@ export default class RecordFormIntro extends React.Component {
     );
   };
 }
+
+// MARK: - Component Styles
 
 const styles = StyleSheet.create({
   title: {

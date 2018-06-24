@@ -6,13 +6,13 @@
 
 import React, { Component } from 'react';
 
-// react-native-router-fluxのインポート宣言(Actionを使用)
-import { Actions } from 'react-native-router-flux';
-
-// 記録コンテンツ用の共通コンポーネント
+// 記録データコンテンツ用の共通コンポーネント
 import RecordList from './parts/RecordList';
 
 export default class RecordListScreen extends React.Component {
+
+  // MARK: - Rendering Components
+
   render() {
     return (
       <RecordList />

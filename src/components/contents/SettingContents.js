@@ -26,10 +26,14 @@ import SettingScreen from './screen/setting/SettingScreen';
 
 export default class SettingContents extends React.Component {
 
+  // MARK: - Functions
+
   // ヘッダーの戻るボタンを押下した際の処理
   _onPressBackButton = () => {
     Actions.pop();
   };
+
+  // MARK: - Rendering Components
 
   render() {
     return (
@@ -40,6 +44,8 @@ export default class SettingContents extends React.Component {
     );
   };
 }
+
+// MARK: - Component Styles
 
 const styles = StyleSheet.create({
   container: {

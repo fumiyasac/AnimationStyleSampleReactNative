@@ -14,14 +14,21 @@ import {
 // react-native-router-fluxのインポート宣言(Actionを使用)
 import { Actions } from 'react-native-router-flux';
 
-// チュートリアル用のアニメーションライブラリ
+// チュートリアル用のアニメーションライブラリ用のコンポーネントのインポート宣言
+// ※ ライブラリ名: react-native-app-intro-slider
+// https://github.com/Jacse/react-native-app-intro-slider
 import AppIntroSlider from 'react-native-app-intro-slider';
 
 export default class TutorialCard extends React.Component {
 
+  // MARK: - Functions
+
+  // チュートリアル表示で「終了」ボタンを押した際の処理
   _onPressOnboadingEndButton = () => {
     Actions.AuthContents();
   };
+
+  // MARK: - Rendering Components
 
   render() {
     const { tutorialContentsData } = this.props;
@@ -37,6 +44,8 @@ export default class TutorialCard extends React.Component {
     );
   };
 }
+
+// MARK: - Component Styles
 
 const styles = StyleSheet.create({
   background: {

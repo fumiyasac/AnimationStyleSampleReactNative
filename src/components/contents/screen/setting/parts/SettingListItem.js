@@ -18,6 +18,9 @@ import {
 
 export default class SettingListItem extends React.Component {
 
+  // MARK: - Functions
+
+  // それぞれのソーシャルリンクに合わせた色を設定する
   _getSocialMediaColorCode = (title) => {
     switch (title) {
       case "Twitter":
@@ -35,6 +38,8 @@ export default class SettingListItem extends React.Component {
     }
   };
 
+  // MARK: - Rendering Components
+
   render() {
     const { title, onPressListItem } = this.props;
     return (
@@ -45,6 +50,8 @@ export default class SettingListItem extends React.Component {
     );
   };
 }
+
+// MARK: - Component Styles
 
 const styles = StyleSheet.create({
   listItem: {

@@ -2,10 +2,10 @@
  * reducers/AuthReducer.js
  *
  * 認証状態を管理するためのReducer
- * → 定義されたaction経由で実行されるステートに関する処理に関するロジックを定義する
+ * → 定義されたAction経由で実行されるState(auth)に関する処理に関するロジックを定義する
  */
 
-// 認証関連のアクションタイプ定義のインポート宣言
+// 認証関連のAction定義のインポート宣言
 import { 
   MAIL_CHANGED,
   PASSWORD_CHANGED,
@@ -16,6 +16,8 @@ import {
 
 // 初期状態のステート定義（オブジェクトの形にする）
 const initialState = { mail: '', password: '', user: null, error: '', loading: false };
+
+// MARK: - Functions
 
 // 選択されたケースを元にstateの更新を行うメソッド（アクションのタイプに応じての場合分けがされている）
 export default (state = initialState, action) => {

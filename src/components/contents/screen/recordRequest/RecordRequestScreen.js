@@ -11,6 +11,9 @@ import React, { Component } from 'react';
 import RecordForm from './parts/RecordForm';
 
 export default class RecordRequestScreen extends React.Component {
+
+  // MARK: - Rendering Components
+
   render() {
     return (
       <RecordForm />

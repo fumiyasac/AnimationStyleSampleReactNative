@@ -12,6 +12,9 @@ import {
 } from 'native-base';
 
 export default class GlobalFooter extends React.Component {
+
+  // MARK: - Rendering Components
+
   render() {
     const { tabs } = this.props;
     return (

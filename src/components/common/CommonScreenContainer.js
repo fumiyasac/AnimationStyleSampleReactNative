@@ -11,6 +11,9 @@ import {
 } from 'native-base';
 
 export default class CommonScreenContainer extends React.Component {
+
+  // MARK: - Rendering Components
+
   render() {
     const { screen } = this.props;
     return (

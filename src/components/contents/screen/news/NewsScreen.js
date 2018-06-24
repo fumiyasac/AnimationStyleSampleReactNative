@@ -10,6 +10,9 @@ import React, { Component } from 'react';
 import NewsList from './parts/NewsList';
 
 export default class NewsScreen extends React.Component {
+
+  // MARK: - Rendering Components
+
   render() {
     return (
       <NewsList />

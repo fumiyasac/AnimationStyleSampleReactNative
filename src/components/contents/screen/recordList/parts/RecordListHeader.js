@@ -13,6 +13,9 @@ import {
 } from 'native-base';
 
 export default class RecordListHeader extends React.Component {
+
+  // MARK: - Rendering Components
+
   render() {
     return (
       <Separator bordered>

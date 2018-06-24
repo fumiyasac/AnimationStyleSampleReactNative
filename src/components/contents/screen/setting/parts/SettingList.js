@@ -15,10 +15,14 @@ import {
   List
 } from 'native-base';
 
+// 設定コンテンツ用の共通コンポーネント
 import SettingListIntro from './SettingListIntro';
 import SettingListItem from './SettingListItem';
 
 export default class SettingList extends React.Component {
+
+  // MARK: - Rendering Components
+
   render() {
     const { settingItems } = this.props;
     return (
@@ -31,6 +35,8 @@ export default class SettingList extends React.Component {
     );
   };
 }
+
+// MARK: - Component Styles
 
 const styles = StyleSheet.create({
   container: {

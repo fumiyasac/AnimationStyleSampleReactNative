@@ -20,15 +20,21 @@ import FeedError from './parts/FeedError';
 
 class FeedScreen extends React.Component {
 
+  // MARK: - Component Life Cycles
+
   // コンポーネントの内容がMountされる前に行う処理
   componentWillMount() {
     this.props.getAllFeed();
   }
 
+  // MARK: - Functions
+
   // 再度取得する処理
   _onPressRetryButton = () => {
     this.props.getAllFeed();
   };
+
+  // MARK: - Rendering Components
 
   render() {
     const { feedList, error, loading } = this.props;

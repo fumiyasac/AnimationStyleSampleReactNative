@@ -9,6 +9,8 @@ import React, { Component } from 'react';
 // チュートリアルコンテンツ用の共通コンポーネント
 import TutorialCard from './parts/TutorialCard';
 
+// チュートリアル表示用のコンテンツデータを定義した配列
+// ※ react-native-app-intro-sliderの形に適合するようにデータを作成する
 let tutorialContentsData = [
   {
     key: 'tutorial1',
@@ -64,6 +66,9 @@ let tutorialContentsData = [
 ];
 
 export default class TutorialScreen extends React.Component {
+
+  // MARK: - Rendering Components
+
   render() {
     return (
       <TutorialCard tutorialContentsData={tutorialContentsData} />

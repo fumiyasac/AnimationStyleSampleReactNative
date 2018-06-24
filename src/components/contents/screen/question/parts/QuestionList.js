@@ -15,10 +15,14 @@ import {
   List
 } from 'native-base';
 
+// よくある質問コンテンツ用の共通コンポーネント
 import QuestionListIntro from './QuestionListIntro';
 import QuestionListItem from './QuestionListItem';
 
 export default class QuestionList extends React.Component {
+
+  // MARK: - Rendering Components
+
   render() {
     const { questionItems } = this.props;
     return (
@@ -31,6 +35,8 @@ export default class QuestionList extends React.Component {
     );
   };
 }
+
+// MARK: - Component Styles
 
 const styles = StyleSheet.create({
   container: {
