@@ -7,11 +7,11 @@
 
 __キャプチャ画像その1：__
 
-![capture1.png](https://qiita-image-store.s3.amazonaws.com/0/17400/07ef4fbc-105c-2c20-19d3-a79fafc0681e.png)
+![capture1.png](https://qiita-image-store.s3.amazonaws.com/0/17400/89250c5e-a201-ad16-061d-9579b0da7b3b.png)
 
 __キャプチャ画像その2：__
 
-![capture2.png](https://qiita-image-store.s3.amazonaws.com/0/17400/253f2797-f666-fcda-f8e7-fa098bf46bca.png)
+![capture2.png](https://qiita-image-store.s3.amazonaws.com/0/17400/b087c01a-114a-0b38-7149-f996e9e57c82.png)
 
 
 ### 画面に関するスケッチと遷移チャート
