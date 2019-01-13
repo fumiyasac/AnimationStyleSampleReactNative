@@ -11,8 +11,7 @@ import {
 } from 'react-native';
 
 import {
-  Content,
-  List
+  Content
 } from 'native-base';
 
 // 設定コンテンツ用の共通コンポーネント
@@ -21,16 +20,30 @@ import SettingListItem from './SettingListItem';
 
 export default class SettingList extends React.Component {
 
+  // MARK: - Functions
+
+  // 取得した設定コンテンツ用データを表示する処理
+  _displaySettingList = () => {
+    const { settingItems } = this.props;
+
+    // 設定コンテンツ用データのリストを生成して表示する
+    return settingItems.items.map( (item, index) => {
+      return (
+        <SettingListItem 
+          key={index}
+          title={item.title}
+          onPressListItem={item.onPressListItem} />
+      );
+    });
+  };
+
   // MARK: - Rendering Components
 
   render() {
-    const { settingItems } = this.props;
     return (
       <Content style={styles.container}>
         <SettingListIntro />
-        <List dataArray={settingItems.items} renderRow={ (item) =>
-          <SettingListItem title={item.title} onPressListItem={item.onPressListItem} />
-        } />
+        {this._displaySettingList()}
       </Content>
     );
   };

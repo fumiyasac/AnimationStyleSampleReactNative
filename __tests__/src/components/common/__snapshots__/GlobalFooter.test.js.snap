@@ -16,7 +16,6 @@ exports[`GlobalFooterコンポーネントが正しく表示されること 1`] 
       "right": 0,
     }
   }
-  virtual={undefined}
 >
   <View
     style={
@@ -28,19 +27,10 @@ exports[`GlobalFooterコンポーネントが正しく表示されること 1`] 
         "justifyContent": "space-between",
       }
     }
-    virtual={undefined}
   >
     <View
-      accessibilityComponentType={undefined}
-      accessibilityLabel={undefined}
-      accessibilityTraits={undefined}
       accessible={true}
-      collapsable={undefined}
-      hasTVPreferredFocus={undefined}
-      hitSlop={undefined}
       isTVSelectable={true}
-      nativeID={undefined}
-      onLayout={undefined}
       onResponderGrant={[Function]}
       onResponderMove={[Function]}
       onResponderRelease={[Function]}
@@ -58,6 +48,7 @@ exports[`GlobalFooterコンポーネントが正しく表示されること 1`] 
           "borderRadius": 5,
           "borderRightWidth": null,
           "borderTopWidth": null,
+          "borderWidth": undefined,
           "elevation": 0,
           "flex": 1,
           "flexDirection": "column",
@@ -72,13 +63,9 @@ exports[`GlobalFooterコンポーネントが正しく表示されること 1`] 
           "shadowRadius": null,
         }
       }
-      testID={undefined}
-      tvParallaxProperties={undefined}
     >
       <Text
-        accessible={true}
         allowFontScaling={false}
-        ellipsizeMode="tail"
         style={
           Array [
             Object {
@@ -106,16 +93,13 @@ exports[`GlobalFooterコンポーネントが正しく表示されること 1`] 
               "fontStyle": "normal",
               "fontWeight": "normal",
             },
+            Object {},
           ]
         }
-        virtual={undefined}
       >
         
       </Text>
       <Text
-        accessible={true}
-        allowFontScaling={true}
-        ellipsizeMode="tail"
         style={
           Array [
             Object {
@@ -135,22 +119,13 @@ exports[`GlobalFooterコンポーネントが正しく表示されること 1`] 
           ]
         }
         uppercase={false}
-        virtual={undefined}
       >
         フィード
       </Text>
     </View>
     <View
-      accessibilityComponentType={undefined}
-      accessibilityLabel={undefined}
-      accessibilityTraits={undefined}
       accessible={true}
-      collapsable={undefined}
-      hasTVPreferredFocus={undefined}
-      hitSlop={undefined}
       isTVSelectable={true}
-      nativeID={undefined}
-      onLayout={undefined}
       onResponderGrant={[Function]}
       onResponderMove={[Function]}
       onResponderRelease={[Function]}
@@ -168,6 +143,7 @@ exports[`GlobalFooterコンポーネントが正しく表示されること 1`] 
           "borderRadius": 5,
           "borderRightWidth": null,
           "borderTopWidth": null,
+          "borderWidth": undefined,
           "elevation": 0,
           "flex": 1,
           "flexDirection": "column",
@@ -182,13 +158,9 @@ exports[`GlobalFooterコンポーネントが正しく表示されること 1`] 
           "shadowRadius": null,
         }
       }
-      testID={undefined}
-      tvParallaxProperties={undefined}
     >
       <Text
-        accessible={true}
         allowFontScaling={false}
-        ellipsizeMode="tail"
         style={
           Array [
             Object {
@@ -216,16 +188,13 @@ exports[`GlobalFooterコンポーネントが正しく表示されること 1`] 
               "fontStyle": "normal",
               "fontWeight": "normal",
             },
+            Object {},
           ]
         }
-        virtual={undefined}
       >
-        
+        
       </Text>
       <Text
-        accessible={true}
-        allowFontScaling={true}
-        ellipsizeMode="tail"
         style={
           Array [
             Object {
@@ -245,22 +214,13 @@ exports[`GlobalFooterコンポーネントが正しく表示されること 1`] 
           ]
         }
         uppercase={false}
-        virtual={undefined}
       >
         勉強日記
       </Text>
     </View>
     <View
-      accessibilityComponentType={undefined}
-      accessibilityLabel={undefined}
-      accessibilityTraits={undefined}
       accessible={true}
-      collapsable={undefined}
-      hasTVPreferredFocus={undefined}
-      hitSlop={undefined}
       isTVSelectable={true}
-      nativeID={undefined}
-      onLayout={undefined}
       onResponderGrant={[Function]}
       onResponderMove={[Function]}
       onResponderRelease={[Function]}
@@ -278,6 +238,7 @@ exports[`GlobalFooterコンポーネントが正しく表示されること 1`] 
           "borderRadius": 5,
           "borderRightWidth": null,
           "borderTopWidth": null,
+          "borderWidth": undefined,
           "elevation": 0,
           "flex": 1,
           "flexDirection": "column",
@@ -292,13 +253,9 @@ exports[`GlobalFooterコンポーネントが正しく表示されること 1`] 
           "shadowRadius": null,
         }
       }
-      testID={undefined}
-      tvParallaxProperties={undefined}
     >
       <Text
-        accessible={true}
         allowFontScaling={false}
-        ellipsizeMode="tail"
         style={
           Array [
             Object {
@@ -326,16 +283,13 @@ exports[`GlobalFooterコンポーネントが正しく表示されること 1`] 
               "fontStyle": "normal",
               "fontWeight": "normal",
             },
+            Object {},
           ]
         }
-        virtual={undefined}
       >
-        
+        
       </Text>
       <Text
-        accessible={true}
-        allowFontScaling={true}
-        ellipsizeMode="tail"
         style={
           Array [
             Object {
@@ -355,22 +309,13 @@ exports[`GlobalFooterコンポーネントが正しく表示されること 1`] 
           ]
         }
         uppercase={false}
-        virtual={undefined}
       >
         達成記録
       </Text>
     </View>
     <View
-      accessibilityComponentType={undefined}
-      accessibilityLabel={undefined}
-      accessibilityTraits={undefined}
       accessible={true}
-      collapsable={undefined}
-      hasTVPreferredFocus={undefined}
-      hitSlop={undefined}
       isTVSelectable={true}
-      nativeID={undefined}
-      onLayout={undefined}
       onResponderGrant={[Function]}
       onResponderMove={[Function]}
       onResponderRelease={[Function]}
@@ -388,6 +333,7 @@ exports[`GlobalFooterコンポーネントが正しく表示されること 1`] 
           "borderRadius": 5,
           "borderRightWidth": null,
           "borderTopWidth": null,
+          "borderWidth": undefined,
           "elevation": 0,
           "flex": 1,
           "flexDirection": "column",
@@ -402,13 +348,9 @@ exports[`GlobalFooterコンポーネントが正しく表示されること 1`] 
           "shadowRadius": null,
         }
       }
-      testID={undefined}
-      tvParallaxProperties={undefined}
     >
       <Text
-        accessible={true}
         allowFontScaling={false}
-        ellipsizeMode="tail"
         style={
           Array [
             Object {
@@ -436,16 +378,13 @@ exports[`GlobalFooterコンポーネントが正しく表示されること 1`] 
               "fontStyle": "normal",
               "fontWeight": "normal",
             },
+            Object {},
           ]
         }
-        virtual={undefined}
       >
-        
+        
       </Text>
       <Text
-        accessible={true}
-        allowFontScaling={true}
-        ellipsizeMode="tail"
         style={
           Array [
             Object {
@@ -465,7 +404,6 @@ exports[`GlobalFooterコンポーネントが正しく表示されること 1`] 
           ]
         }
         uppercase={false}
-        virtual={undefined}
       >
         お買い物
       </Text>

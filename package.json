@@ -8,21 +8,21 @@
   },
   "dependencies": {
     "firebase": "^5.0.3",
-    "native-base": "^2.4.4",
-    "react": "16.3.0-alpha.2",
-    "react-native": "0.54.2",
+    "native-base": "^2.10.0",
+    "react": "^16.6.3",
+    "react-native": "^0.57.8",
     "react-native-app-intro-slider": "^0.2.4",
     "react-redux": "^5.0.7",
     "redux": "^4.0.0",
     "redux-logger": "^3.0.6",
     "redux-thunk": "^2.2.0",
-    "react-native-router-flux": "^4.0.0-beta.28"
+    "react-native-router-flux": "^4.0.6"
   },
   "devDependencies": {
     "babel-jest": "23.0.0-alpha.0",
     "babel-preset-react-native": "4.0.0",
     "jest": "22.4.2",
-    "react-native-router-flux": "^4.0.0-beta.28",
+    "react-native-router-flux": "^4.0.6",
     "react-test-renderer": "16.3.0-alpha.2"
   },
   "jest": {

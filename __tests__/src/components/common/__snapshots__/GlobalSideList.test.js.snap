@@ -18,12 +18,8 @@ exports[`GlobalSideListコンポーネントが正しく表示されること 1`
         "paddingTop": 12,
       }
     }
-    virtual={undefined}
   >
     <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
       style={
         Object {
           "color": "#777",
@@ -32,21 +28,13 @@ exports[`GlobalSideListコンポーネントが正しく表示されること 1`
         }
       }
       uppercase={false}
-      virtual={undefined}
     >
       メニュー
     </Text>
   </View>
   <View
-    accessibilityComponentType={undefined}
-    accessibilityLabel={undefined}
-    accessibilityTraits={undefined}
     accessible={true}
-    hasTVPreferredFocus={undefined}
-    hitSlop={undefined}
     isTVSelectable={true}
-    nativeID={undefined}
-    onLayout={undefined}
     onResponderGrant={[Function]}
     onResponderMove={[Function]}
     onResponderRelease={[Function]}
@@ -54,12 +42,9 @@ exports[`GlobalSideListコンポーネントが正しく表示されること 1`
     onResponderTerminationRequest={[Function]}
     onStartShouldSetResponder={[Function]}
     style={null}
-    testID={undefined}
-    tvParallaxProperties={undefined}
   >
     <View
       last={true}
-      onPress={undefined}
       style={
         Array [
           Object {
@@ -80,12 +65,8 @@ exports[`GlobalSideListコンポーネントが正しく表示されること 1`
           },
         ]
       }
-      virtual={undefined}
     >
       <Text
-        accessible={true}
-        allowFontScaling={true}
-        ellipsizeMode="tail"
         style={
           Array [
             Object {
@@ -102,22 +83,14 @@ exports[`GlobalSideListコンポーネントが正しく表示されること 1`
           ]
         }
         uppercase={false}
-        virtual={undefined}
       >
         フィード
       </Text>
     </View>
   </View>
   <View
-    accessibilityComponentType={undefined}
-    accessibilityLabel={undefined}
-    accessibilityTraits={undefined}
     accessible={true}
-    hasTVPreferredFocus={undefined}
-    hitSlop={undefined}
     isTVSelectable={true}
-    nativeID={undefined}
-    onLayout={undefined}
     onResponderGrant={[Function]}
     onResponderMove={[Function]}
     onResponderRelease={[Function]}
@@ -125,12 +98,9 @@ exports[`GlobalSideListコンポーネントが正しく表示されること 1`
     onResponderTerminationRequest={[Function]}
     onStartShouldSetResponder={[Function]}
     style={null}
-    testID={undefined}
-    tvParallaxProperties={undefined}
   >
     <View
       last={true}
-      onPress={undefined}
       style={
         Array [
           Object {
@@ -151,12 +121,8 @@ exports[`GlobalSideListコンポーネントが正しく表示されること 1`
           },
         ]
       }
-      virtual={undefined}
     >
       <Text
-        accessible={true}
-        allowFontScaling={true}
-        ellipsizeMode="tail"
         style={
           Array [
             Object {
@@ -173,22 +139,14 @@ exports[`GlobalSideListコンポーネントが正しく表示されること 1`
           ]
         }
         uppercase={false}
-        virtual={undefined}
       >
         勉強日記
       </Text>
     </View>
   </View>
   <View
-    accessibilityComponentType={undefined}
-    accessibilityLabel={undefined}
-    accessibilityTraits={undefined}
     accessible={true}
-    hasTVPreferredFocus={undefined}
-    hitSlop={undefined}
     isTVSelectable={true}
-    nativeID={undefined}
-    onLayout={undefined}
     onResponderGrant={[Function]}
     onResponderMove={[Function]}
     onResponderRelease={[Function]}
@@ -196,12 +154,9 @@ exports[`GlobalSideListコンポーネントが正しく表示されること 1`
     onResponderTerminationRequest={[Function]}
     onStartShouldSetResponder={[Function]}
     style={null}
-    testID={undefined}
-    tvParallaxProperties={undefined}
   >
     <View
       last={true}
-      onPress={undefined}
       style={
         Array [
           Object {
@@ -222,12 +177,8 @@ exports[`GlobalSideListコンポーネントが正しく表示されること 1`
           },
         ]
       }
-      virtual={undefined}
     >
       <Text
-        accessible={true}
-        allowFontScaling={true}
-        ellipsizeMode="tail"
         style={
           Array [
             Object {
@@ -244,22 +195,14 @@ exports[`GlobalSideListコンポーネントが正しく表示されること 1`
           ]
         }
         uppercase={false}
-        virtual={undefined}
       >
         達成記録
       </Text>
     </View>
   </View>
   <View
-    accessibilityComponentType={undefined}
-    accessibilityLabel={undefined}
-    accessibilityTraits={undefined}
     accessible={true}
-    hasTVPreferredFocus={undefined}
-    hitSlop={undefined}
     isTVSelectable={true}
-    nativeID={undefined}
-    onLayout={undefined}
     onResponderGrant={[Function]}
     onResponderMove={[Function]}
     onResponderRelease={[Function]}
@@ -267,12 +210,9 @@ exports[`GlobalSideListコンポーネントが正しく表示されること 1`
     onResponderTerminationRequest={[Function]}
     onStartShouldSetResponder={[Function]}
     style={null}
-    testID={undefined}
-    tvParallaxProperties={undefined}
   >
     <View
       last={true}
-      onPress={undefined}
       style={
         Array [
           Object {
@@ -293,12 +233,8 @@ exports[`GlobalSideListコンポーネントが正しく表示されること 1`
           },
         ]
       }
-      virtual={undefined}
     >
       <Text
-        accessible={true}
-        allowFontScaling={true}
-        ellipsizeMode="tail"
         style={
           Array [
             Object {
@@ -315,22 +251,14 @@ exports[`GlobalSideListコンポーネントが正しく表示されること 1`
           ]
         }
         uppercase={false}
-        virtual={undefined}
       >
         お買い物
       </Text>
     </View>
   </View>
   <View
-    accessibilityComponentType={undefined}
-    accessibilityLabel={undefined}
-    accessibilityTraits={undefined}
     accessible={true}
-    hasTVPreferredFocus={undefined}
-    hitSlop={undefined}
     isTVSelectable={true}
-    nativeID={undefined}
-    onLayout={undefined}
     onResponderGrant={[Function]}
     onResponderMove={[Function]}
     onResponderRelease={[Function]}
@@ -338,12 +266,9 @@ exports[`GlobalSideListコンポーネントが正しく表示されること 1`
     onResponderTerminationRequest={[Function]}
     onStartShouldSetResponder={[Function]}
     style={null}
-    testID={undefined}
-    tvParallaxProperties={undefined}
   >
     <View
       last={true}
-      onPress={undefined}
       style={
         Array [
           Object {
@@ -364,12 +289,8 @@ exports[`GlobalSideListコンポーネントが正しく表示されること 1`
           },
         ]
       }
-      virtual={undefined}
     >
       <Text
-        accessible={true}
-        allowFontScaling={true}
-        ellipsizeMode="tail"
         style={
           Array [
             Object {
@@ -386,7 +307,6 @@ exports[`GlobalSideListコンポーネントが正しく表示されること 1`
           ]
         }
         uppercase={false}
-        virtual={undefined}
       >
         お問い合わせ
       </Text>

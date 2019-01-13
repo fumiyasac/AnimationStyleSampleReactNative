@@ -11,8 +11,7 @@ import {
 } from 'react-native';
 
 import {
-  Content,
-  List
+  Content
 } from 'native-base';
 
 // connectのインポート宣言を行う
@@ -44,9 +43,8 @@ class NewsList extends React.Component {
     this.props.getAllNews();
   };
 
-  // MARK: - Rendering Components
-
-  render() {
+  // 取得したニュースデータを表示する処理
+  _displayNewsList = () => {
     const { newsList, error, loading } = this.props;
 
     // 最新のお知らせが取得中の場合における表示
@@ -71,12 +69,20 @@ class NewsList extends React.Component {
       newsItems.push(newsList[index]);
     }
 
-    // 最新のお知らせが取得成功の場合における表示
+    // ニュースデータのリストを生成して表示する
+    return newsItems.map( (item, index) => {
+      return (
+        <NewsListItem key={index} item={item} />
+      );
+    });
+  };
+
+  // MARK: - Rendering Components
+
+  render() {
     return (
       <Content style={styles.container}>
-        <List dataArray={newsItems} renderRow={ (item) =>
-          <NewsListItem item={item} />
-        } />
+        {this._displayNewsList()}
       </Content>
     );
   };

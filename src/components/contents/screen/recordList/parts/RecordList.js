@@ -11,7 +11,7 @@ import {
 } from 'react-native';
 
 import {
-  Content,
+  Content
 } from 'native-base';
 
 // connectのインポート宣言を行う
