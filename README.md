@@ -3,6 +3,11 @@
 シンプルかつ必要最小限の実装構成での「ReactNative + Redux + NativeBase + Firebaseを組み合わせたサンプル」になります。
 このサンプルのUIについてはなるべくNativeBaseに準拠した形にしています。
 
+__現在のバージョン情報:__
+
++ ReactNative: 0.57.8
++ React: 16.6.3
+
 ### 本サンプルの画面キャプチャ
 
 __キャプチャ画像その1：__
@@ -27,13 +32,13 @@ __1. DBや遷移などアプリのベースになる機能：__
 | ライブラリ名 | ライブラリの機能概要 | バージョン |
 |:-----------|:------------|:------------|
 |[react-native-firebase](https://github.com/invertase/react-native-firebase) |認証＆DB機能 |5.0.3 |
-|[react-native-router-flux](https://github.com/aksonov/react-native-router-flux) |画面遷移のコントロール |4.0.0-beta.28 |
+|[react-native-router-flux](https://github.com/aksonov/react-native-router-flux) |画面遷移のコントロール |4.0.6 |
 
 __2. UIやデザイン要素のベースになる機能：__
 
 | ライブラリ名 | ライブラリの機能概要 | バージョン |
 |:-----------|:------------|:------------|
-|[NativeBase](https://github.com/GeekyAnts/NativeBase) |UIコンポーネント |2.4.4 |
+|[NativeBase](https://github.com/GeekyAnts/NativeBase) |UIコンポーネント |2.10.0 |
 |[react-native-app-intro-slider](https://github.com/Jacse/react-native-app-intro-slider) |初回チュートリアル画面 |0.2.4 |
 
 __3. Reduxを導入するにあたって必要なもの：__
