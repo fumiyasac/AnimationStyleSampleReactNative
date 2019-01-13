@@ -2,16 +2,8 @@
 
 exports[`GlobalTabコンポーネントが正しく表示されること 1`] = `
 <View
-  accessibilityComponentType={undefined}
-  accessibilityLabel={undefined}
-  accessibilityTraits={undefined}
   accessible={true}
-  collapsable={undefined}
-  hasTVPreferredFocus={undefined}
-  hitSlop={undefined}
   isTVSelectable={true}
-  nativeID={undefined}
-  onLayout={undefined}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
@@ -29,6 +21,7 @@ exports[`GlobalTabコンポーネントが正しく表示されること 1`] = `
       "borderRadius": 5,
       "borderRightWidth": null,
       "borderTopWidth": null,
+      "borderWidth": undefined,
       "elevation": 2,
       "flexDirection": "column",
       "height": null,
@@ -36,15 +29,15 @@ exports[`GlobalTabコンポーネントが正しく表示されること 1`] = `
       "opacity": 1,
       "paddingBottom": 6,
       "paddingTop": 6,
+      "shadowColor": undefined,
+      "shadowOffset": undefined,
+      "shadowOpacity": undefined,
+      "shadowRadius": undefined,
     }
   }
-  testID={undefined}
-  tvParallaxProperties={undefined}
 >
   <Text
-    accessible={true}
     allowFontScaling={false}
-    ellipsizeMode="tail"
     style={
       Array [
         Object {
@@ -72,16 +65,13 @@ exports[`GlobalTabコンポーネントが正しく表示されること 1`] = `
           "fontStyle": "normal",
           "fontWeight": "normal",
         },
+        Object {},
       ]
     }
-    virtual={undefined}
   >
     
   </Text>
   <Text
-    accessible={true}
-    allowFontScaling={true}
-    ellipsizeMode="tail"
     style={
       Array [
         Object {
@@ -100,7 +90,6 @@ exports[`GlobalTabコンポーネントが正しく表示されること 1`] = `
       ]
     }
     uppercase={false}
-    virtual={undefined}
   >
     フィード
   </Text>

@@ -3,13 +3,9 @@
 exports[`AuthFormコンポーネントが正しく表示されること 1`] = `
 <View
   style={Object {}}
-  virtual={undefined}
 >
   <View>
     <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
       style={
         Array [
           Object {
@@ -27,14 +23,10 @@ exports[`AuthFormコンポーネントが正しく表示されること 1`] = `
         ]
       }
       uppercase={false}
-      virtual={undefined}
     >
       Firebase + NativeBase Sample
     </Text>
     <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
       note={true}
       style={
         Array [
@@ -50,22 +42,13 @@ exports[`AuthFormコンポーネントが正しく表示されること 1`] = `
         ]
       }
       uppercase={false}
-      virtual={undefined}
     >
       こちらはFirebaseとNativeBaseを組み合わせて作成したサンプルの事例になります。※お手元で動かす場合は、お使いの際にはご自身のFirebaseアカウント情報をご利用下さい。
     </Text>
   </View>
   <View
-    accessibilityComponentType={undefined}
-    accessibilityLabel={undefined}
-    accessibilityTraits={undefined}
     accessible={true}
-    collapsable={undefined}
-    hasTVPreferredFocus={undefined}
-    hitSlop={undefined}
     isTVSelectable={true}
-    nativeID={undefined}
-    onLayout={undefined}
     onResponderGrant={[Function]}
     onResponderMove={[Function]}
     onResponderRelease={[Function]}
@@ -79,22 +62,19 @@ exports[`AuthFormコンポーネントが正しく表示されること 1`] = `
         "borderBottomWidth": 1,
         "borderColor": "#D9D5DC",
         "borderLeftWidth": 0,
+        "borderRadius": undefined,
         "borderRightWidth": 0,
         "borderTopWidth": 0,
+        "borderWidth": undefined,
         "flexDirection": null,
-        "height": 65,
         "marginLeft": 0,
+        "minHeight": 65,
         "opacity": 1,
         "paddingLeft": 15,
       }
     }
-    testID={undefined}
-    tvParallaxProperties={undefined}
   >
     <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
       style={
         Array [
           Object {
@@ -116,7 +96,6 @@ exports[`AuthFormコンポーネントが正しく表示されること 1`] = `
           },
         ]
       }
-      virtual={undefined}
     >
       メールアドレス:
     </Text>
@@ -134,6 +113,7 @@ exports[`AuthFormコンポーネントが正しく表示されること 1`] = `
             "flex": 1,
             "fontSize": 17,
             "height": 50,
+            "lineHeight": 18,
             "marginLeft": null,
             "paddingLeft": null,
             "paddingRight": 5,
@@ -147,20 +127,12 @@ exports[`AuthFormコンポーネントが正しく表示されること 1`] = `
         ]
       }
       underlineColorAndroid="rgba(0,0,0,0)"
-      virtual={undefined}
+      value=""
     />
   </View>
   <View
-    accessibilityComponentType={undefined}
-    accessibilityLabel={undefined}
-    accessibilityTraits={undefined}
     accessible={true}
-    collapsable={undefined}
-    hasTVPreferredFocus={undefined}
-    hitSlop={undefined}
     isTVSelectable={true}
-    nativeID={undefined}
-    onLayout={undefined}
     onResponderGrant={[Function]}
     onResponderMove={[Function]}
     onResponderRelease={[Function]}
@@ -174,22 +146,19 @@ exports[`AuthFormコンポーネントが正しく表示されること 1`] = `
         "borderBottomWidth": 1,
         "borderColor": "#D9D5DC",
         "borderLeftWidth": 0,
+        "borderRadius": undefined,
         "borderRightWidth": 0,
         "borderTopWidth": 0,
+        "borderWidth": undefined,
         "flexDirection": null,
-        "height": 65,
         "marginLeft": 0,
+        "minHeight": 65,
         "opacity": 1,
         "paddingLeft": 15,
       }
     }
-    testID={undefined}
-    tvParallaxProperties={undefined}
   >
     <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
       style={
         Array [
           Object {
@@ -211,7 +180,6 @@ exports[`AuthFormコンポーネントが正しく表示されること 1`] = `
           },
         ]
       }
-      virtual={undefined}
     >
       パスワード:
     </Text>
@@ -228,8 +196,9 @@ exports[`AuthFormコンポーネントが正しく表示されること 1`] = `
             "alignSelf": "stretch",
             "color": "#000",
             "flex": 1,
-            "fontSize": 17,
+            "fontSize": 13,
             "height": 50,
+            "lineHeight": 18,
             "marginLeft": null,
             "paddingLeft": null,
             "paddingRight": 5,
@@ -243,14 +212,11 @@ exports[`AuthFormコンポーネントが正しく表示されること 1`] = `
         ]
       }
       underlineColorAndroid="rgba(0,0,0,0)"
-      virtual={undefined}
+      value=""
     />
   </View>
   <View>
     <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
       style={
         Array [
           Object {
@@ -270,7 +236,6 @@ exports[`AuthFormコンポーネントが正しく表示されること 1`] = `
         ]
       }
       uppercase={false}
-      virtual={undefined}
     >
       
     </Text>
@@ -285,16 +250,8 @@ exports[`AuthFormコンポーネントが正しく表示されること 1`] = `
     }
   >
     <View
-      accessibilityComponentType={undefined}
-      accessibilityLabel={undefined}
-      accessibilityTraits={undefined}
       accessible={true}
-      collapsable={undefined}
-      hasTVPreferredFocus={undefined}
-      hitSlop={undefined}
       isTVSelectable={true}
-      nativeID={undefined}
-      onLayout={undefined}
       onResponderGrant={[Function]}
       onResponderMove={[Function]}
       onResponderRelease={[Function]}
@@ -312,6 +269,7 @@ exports[`AuthFormコンポーネントが正しく表示されること 1`] = `
           "borderRadius": 5,
           "borderRightWidth": null,
           "borderTopWidth": null,
+          "borderWidth": undefined,
           "elevation": 2,
           "flexDirection": "row",
           "height": 45,
@@ -319,15 +277,14 @@ exports[`AuthFormコンポーネントが正しく表示されること 1`] = `
           "opacity": 1,
           "paddingBottom": 6,
           "paddingTop": 6,
+          "shadowColor": undefined,
+          "shadowOffset": undefined,
+          "shadowOpacity": undefined,
+          "shadowRadius": undefined,
         }
       }
-      testID={undefined}
-      tvParallaxProperties={undefined}
     >
       <Text
-        accessible={true}
-        allowFontScaling={true}
-        ellipsizeMode="tail"
         style={
           Array [
             Object {
@@ -351,7 +308,6 @@ exports[`AuthFormコンポーネントが正しく表示されること 1`] = `
           ]
         }
         uppercase={false}
-        virtual={undefined}
       >
         既存ユーザー情報でログインする
       </Text>
@@ -367,16 +323,8 @@ exports[`AuthFormコンポーネントが正しく表示されること 1`] = `
     }
   >
     <View
-      accessibilityComponentType={undefined}
-      accessibilityLabel={undefined}
-      accessibilityTraits={undefined}
       accessible={true}
-      collapsable={undefined}
-      hasTVPreferredFocus={undefined}
-      hitSlop={undefined}
       isTVSelectable={true}
-      nativeID={undefined}
-      onLayout={undefined}
       onResponderGrant={[Function]}
       onResponderMove={[Function]}
       onResponderRelease={[Function]}
@@ -394,6 +342,7 @@ exports[`AuthFormコンポーネントが正しく表示されること 1`] = `
           "borderRadius": 5,
           "borderRightWidth": null,
           "borderTopWidth": null,
+          "borderWidth": undefined,
           "elevation": 2,
           "flexDirection": "row",
           "height": 45,
@@ -401,15 +350,14 @@ exports[`AuthFormコンポーネントが正しく表示されること 1`] = `
           "opacity": 1,
           "paddingBottom": 6,
           "paddingTop": 6,
+          "shadowColor": undefined,
+          "shadowOffset": undefined,
+          "shadowOpacity": undefined,
+          "shadowRadius": undefined,
         }
       }
-      testID={undefined}
-      tvParallaxProperties={undefined}
     >
       <Text
-        accessible={true}
-        allowFontScaling={true}
-        ellipsizeMode="tail"
         style={
           Array [
             Object {
@@ -433,7 +381,6 @@ exports[`AuthFormコンポーネントが正しく表示されること 1`] = `
           ]
         }
         uppercase={false}
-        virtual={undefined}
       >
         新規ユーザー情報を登録する
       </Text>

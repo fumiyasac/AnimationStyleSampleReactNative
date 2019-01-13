@@ -2,15 +2,8 @@
 
 exports[`GlobalSideListItemコンポーネントが正しく表示されること 1`] = `
 <View
-  accessibilityComponentType={undefined}
-  accessibilityLabel={undefined}
-  accessibilityTraits={undefined}
   accessible={true}
-  hasTVPreferredFocus={undefined}
-  hitSlop={undefined}
   isTVSelectable={true}
-  nativeID={undefined}
-  onLayout={undefined}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
   onResponderRelease={[Function]}
@@ -18,12 +11,9 @@ exports[`GlobalSideListItemコンポーネントが正しく表示されるこ�
   onResponderTerminationRequest={[Function]}
   onStartShouldSetResponder={[Function]}
   style={null}
-  testID={undefined}
-  tvParallaxProperties={undefined}
 >
   <View
     last={true}
-    onPress={undefined}
     style={
       Array [
         Object {
@@ -44,12 +34,8 @@ exports[`GlobalSideListItemコンポーネントが正しく表示されるこ�
         },
       ]
     }
-    virtual={undefined}
   >
     <Text
-      accessible={true}
-      allowFontScaling={true}
-      ellipsizeMode="tail"
       style={
         Array [
           Object {
@@ -66,7 +52,6 @@ exports[`GlobalSideListItemコンポーネントが正しく表示されるこ�
         ]
       }
       uppercase={false}
-      virtual={undefined}
     >
       フィード
     </Text>

@@ -1,7 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`GlobalHeaderコンポーネントが正しく表示されること 1`] = `
-<View>
+<View
+  onLayout={[Function]}
+>
   <View
     hasTabs={true}
     iosBarStyle="light-content"
@@ -16,9 +18,9 @@ exports[`GlobalHeaderコンポーネントが正しく表示されること 1`] 
           "height": 64,
           "justifyContent": "center",
           "left": 0,
-          "paddingLeft": 10,
+          "paddingLeft": 6,
           "paddingRight": 10,
-          "paddingTop": 15,
+          "paddingTop": 18,
           "right": 0,
           "shadowColor": null,
           "shadowOffset": null,
@@ -31,7 +33,6 @@ exports[`GlobalHeaderコンポーネントが正しく表示されること 1`] 
         },
       ]
     }
-    virtual={undefined}
   >
     <View
       style={
@@ -41,19 +42,10 @@ exports[`GlobalHeaderコンポーネントが正しく表示されること 1`] 
           "flex": 1,
         }
       }
-      virtual={undefined}
     >
       <View
-        accessibilityComponentType={undefined}
-        accessibilityLabel={undefined}
-        accessibilityTraits={undefined}
         accessible={true}
-        collapsable={undefined}
-        hasTVPreferredFocus={undefined}
-        hitSlop={undefined}
         isTVSelectable={true}
-        nativeID={undefined}
-        onLayout={undefined}
         onResponderGrant={[Function]}
         onResponderMove={[Function]}
         onResponderRelease={[Function]}
@@ -71,6 +63,7 @@ exports[`GlobalHeaderコンポーネントが正しく表示されること 1`] 
             "borderRadius": 5,
             "borderRightWidth": null,
             "borderTopWidth": null,
+            "borderWidth": undefined,
             "elevation": 0,
             "flexDirection": "row",
             "height": 45,
@@ -78,7 +71,7 @@ exports[`GlobalHeaderコンポーネントが正しく表示されること 1`] 
             "marginLeft": -3,
             "opacity": 1,
             "paddingBottom": 6,
-            "paddingLeft": 6,
+            "paddingLeft": 4,
             "paddingRight": 6,
             "paddingTop": 6,
             "shadowColor": null,
@@ -87,13 +80,9 @@ exports[`GlobalHeaderコンポーネントが正しく表示されること 1`] 
             "shadowRadius": null,
           }
         }
-        testID={undefined}
-        tvParallaxProperties={undefined}
       >
         <Text
-          accessible={true}
           allowFontScaling={false}
-          ellipsizeMode="tail"
           style={
             Array [
               Object {
@@ -107,11 +96,11 @@ exports[`GlobalHeaderコンポーネントが正しく表示されること 1`] 
                 },
                 Object {
                   "color": "#007aff",
-                  "fontSize": 30,
-                  "marginLeft": 2,
+                  "fontSize": 34,
+                  "marginLeft": 1,
                   "marginRight": 2,
                   "marginTop": 0,
-                  "paddingTop": 2,
+                  "paddingTop": 1,
                 },
                 Object {
                   "color": "#ffffff",
@@ -122,11 +111,11 @@ exports[`GlobalHeaderコンポーネントが正しく表示されること 1`] 
                 "fontStyle": "normal",
                 "fontWeight": "normal",
               },
+              Object {},
             ]
           }
-          virtual={undefined}
         >
-          
+          
         </Text>
       </View>
     </View>
@@ -138,12 +127,8 @@ exports[`GlobalHeaderコンポーネントが正しく表示されること 1`] 
           "flex": 1,
         }
       }
-      virtual={undefined}
     >
       <Text
-        accessible={true}
-        allowFontScaling={true}
-        ellipsizeMode="tail"
         numberOfLines={1}
         style={
           Array [
@@ -151,7 +136,10 @@ exports[`GlobalHeaderコンポーネントが正しく表示されること 1`] 
               "color": "#000",
               "fontFamily": "System",
               "fontSize": 17,
-              "fontWeight": "600",
+              "fontWeight": "700",
+              "marginLeft": undefined,
+              "paddingLeft": 4,
+              "paddingTop": 1,
               "textAlign": "center",
             },
             Object {
@@ -159,7 +147,6 @@ exports[`GlobalHeaderコンポーネントが正しく表示されること 1`] 
             },
           ]
         }
-        virtual={undefined}
       >
         フィード
       </Text>
@@ -174,19 +161,10 @@ exports[`GlobalHeaderコンポーネントが正しく表示されること 1`] 
           "justifyContent": "flex-end",
         }
       }
-      virtual={undefined}
     >
       <View
-        accessibilityComponentType={undefined}
-        accessibilityLabel={undefined}
-        accessibilityTraits={undefined}
         accessible={true}
-        collapsable={undefined}
-        hasTVPreferredFocus={undefined}
-        hitSlop={undefined}
         isTVSelectable={true}
-        nativeID={undefined}
-        onLayout={undefined}
         onResponderGrant={[Function]}
         onResponderMove={[Function]}
         onResponderRelease={[Function]}
@@ -204,11 +182,12 @@ exports[`GlobalHeaderコンポーネントが正しく表示されること 1`] 
             "borderRadius": 50,
             "borderRightWidth": null,
             "borderTopWidth": null,
+            "borderWidth": undefined,
             "elevation": 0,
             "flexDirection": "row",
             "height": 45,
             "justifyContent": "space-between",
-            "marginRight": -8,
+            "marginRight": -9,
             "opacity": 1,
             "paddingBottom": 6,
             "paddingLeft": 15,
@@ -220,13 +199,9 @@ exports[`GlobalHeaderコンポーネントが正しく表示されること 1`] 
             "shadowRadius": null,
           }
         }
-        testID={undefined}
-        tvParallaxProperties={undefined}
       >
         <Text
-          accessible={true}
           allowFontScaling={false}
-          ellipsizeMode="tail"
           style={
             Array [
               Object {
@@ -240,9 +215,9 @@ exports[`GlobalHeaderコンポーネントが正しく表示されること 1`] 
                 },
                 Object {
                   "color": "#007aff",
-                  "fontSize": 30,
+                  "fontSize": 31,
                   "marginLeft": 2,
-                  "marginRight": 2,
+                  "marginRight": 0,
                   "marginTop": 0,
                   "paddingTop": 2,
                 },
@@ -255,11 +230,11 @@ exports[`GlobalHeaderコンポーネントが正しく表示されること 1`] 
                 "fontStyle": "normal",
                 "fontWeight": "normal",
               },
+              Object {},
             ]
           }
-          virtual={undefined}
         >
-          
+          
         </Text>
       </View>
     </View>

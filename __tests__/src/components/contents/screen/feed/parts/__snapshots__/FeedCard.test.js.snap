@@ -17,6 +17,7 @@ exports[`FeedCardコンポーネントが正しく表示されること 1`] = `
     }
   }
   enableAutomaticScroll={true}
+  enableOnAndroid={false}
   enableResetScrollToCoords={true}
   extraHeight={75}
   extraScrollHeight={0}
@@ -36,6 +37,7 @@ exports[`FeedCardコンポーネントが正しく表示されること 1`] = `
   }
   scrollEventThrottle={1}
   scrollForExtraHeightOnAndroid={[Function]}
+  scrollIntoView={[Function]}
   scrollToEnd={[Function]}
   scrollToFocusedInput={[Function]}
   scrollToPosition={[Function]}
@@ -46,6 +48,7 @@ exports[`FeedCardコンポーネントが正しく表示されること 1`] = `
       "flex": 1,
     }
   }
+  update={[Function]}
   viewIsInsideTabBar={false}
   virtual={undefined}
 >
@@ -61,7 +64,6 @@ exports[`FeedCardコンポーネントが正しく表示されること 1`] = `
           "borderRightWidth": 0.5,
           "borderTopWidth": 0.5,
           "elevation": 3,
-          "flex": 1,
           "flexWrap": "nowrap",
           "marginBottom": 5,
           "marginLeft": 2,
@@ -76,7 +78,6 @@ exports[`FeedCardコンポーネントが正しく表示されること 1`] = `
           "shadowRadius": 1.5,
         }
       }
-      virtual={undefined}
     >
       <View
         style={
@@ -91,7 +92,6 @@ exports[`FeedCardコンポーネントが正しく表示されること 1`] = `
             "paddingTop": 10,
           }
         }
-        virtual={undefined}
       >
         <View
           style={
@@ -101,12 +101,8 @@ exports[`FeedCardコンポーネントが正しく表示されること 1`] = `
               "flex": 1,
             }
           }
-          virtual={undefined}
         >
           <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
             style={
               Array [
                 Object {
@@ -122,14 +118,10 @@ exports[`FeedCardコンポーネントが正しく表示されること 1`] = `
               ]
             }
             uppercase={false}
-            virtual={undefined}
           >
             タイトルが入ります。
           </Text>
           <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
             note={true}
             style={
               Array [
@@ -147,14 +139,10 @@ exports[`FeedCardコンポーネントが正しく表示されること 1`] = `
               ]
             }
             uppercase={false}
-            virtual={undefined}
           >
             サブタイトルが入ります。
           </Text>
           <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
             note={true}
             style={
               Array [
@@ -167,13 +155,13 @@ exports[`FeedCardコンポーネントが正しく表示されること 1`] = `
                 },
                 Object {
                   "fontSize": 12,
+                  "fontWeight": "bold",
                   "marginBottom": 4,
                   "marginTop": 8,
                 },
               ]
             }
             uppercase={false}
-            virtual={undefined}
           >
             カテゴリーが入ります。
           </Text>
@@ -199,12 +187,11 @@ exports[`FeedCardコンポーネントが正しく表示されること 1`] = `
             },
           ]
         }
-        virtual={undefined}
       >
         <Image
           source={
             Object {
-              "uri": "https://otsuka-shop.s3-ap-northeast-1.amazonaws.com/shops/images/1/large.jpg",
+              "testUri": "../../../src/components/contents/screen/feed/assets/feed_sample.jpg",
             }
           }
           style={
@@ -229,12 +216,8 @@ exports[`FeedCardコンポーネントが正しく表示されること 1`] = `
             "paddingTop": 10,
           }
         }
-        virtual={undefined}
       >
         <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
           style={
             Array [
               Object {
@@ -250,7 +233,6 @@ exports[`FeedCardコンポーネントが正しく表示されること 1`] = `
             ]
           }
           uppercase={false}
-          virtual={undefined}
         >
           詳細テキストが入ります。詳細テキストが入ります。詳細テキストが入ります。詳細テキストが入ります。詳細テキストが入ります。詳細テキストが入ります。詳細テキストが入ります。詳細テキストが入ります。詳細テキストが入ります。詳細テキストが入ります。
         </Text>
@@ -274,7 +256,6 @@ exports[`FeedCardコンポーネントが正しく表示されること 1`] = `
             },
           ]
         }
-        virtual={undefined}
       >
         <View
           style={
@@ -285,12 +266,8 @@ exports[`FeedCardコンポーネントが正しく表示されること 1`] = `
               "flexDirection": "row",
             }
           }
-          virtual={undefined}
         >
           <Text
-            accessible={true}
-            allowFontScaling={true}
-            ellipsizeMode="tail"
             style={
               Array [
                 Object {
@@ -308,7 +285,6 @@ exports[`FeedCardコンポーネントが正しく表示されること 1`] = `
               ]
             }
             uppercase={false}
-            virtual={undefined}
           >
             YYYY/MM/DD
           </Text>
