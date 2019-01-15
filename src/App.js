@@ -21,9 +21,6 @@ import logger from 'redux-logger';
 // react-native-router-fluxのインポート宣言(Router, Sceneを使用)
 import { Router, Scene } from 'react-native-router-flux';
 
-// firebaseのインポート宣言を行う
-import firebase from 'firebase';
-
 // reducerのインポート宣言
 import reducers from './redux/reducers';
 
@@ -48,8 +45,12 @@ export default class App extends React.Component {
 
   // MARK: - Component Life Cycles
 
-  // コンポーネントの内容がMountされる前に行う処理
-  componentWillMount() {
+  // コンストラクタで行う処理
+  constructor(props){
+    super(props)
+
+    // firebaseのインポート宣言を行う
+    const firebase = require("firebase");
 
     // firebaseのセッティング情報を記載する
     // ※API情報に関してFirebaseコンソールを取得 → Authentication → 「ログイン方法」でメール/パスワードを有効にする
